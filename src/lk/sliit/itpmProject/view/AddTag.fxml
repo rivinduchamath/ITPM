@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #d3d8d8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddTagController">
+    <Text layoutX="570.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Tags">
+        <font>
+            <Font size="41.0" />
+        </font>
+    </Text>
+   <Text layoutX="397.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Name :">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <TextField id="txtTagName" layoutX="539.0" layoutY="118.0" prefHeight="31.0" prefWidth="396.0">
+      <effect>
+         <Blend />
+      </effect>
+   </TextField>
+   <TextField id="txtTagCode" layoutX="539.0" layoutY="195.0" prefHeight="31.0" prefWidth="396.0">
+      <effect>
+         <Blend />
+      </effect>
+   </TextField>
+   <Text layoutX="397.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Code :">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Text layoutX="397.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Related Tag :">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <ChoiceBox id="spRelatedTag" layoutX="539.0" layoutY="268.0" prefHeight="31.0" prefWidth="396.0" />
+   <Button id="btnSave" graphicTextGap="6.0" layoutX="494.0" layoutY="382.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #5c9a48;" text="Save" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+   <Button id="btnClear" graphicTextGap="6.0" layoutX="861.0" layoutY="382.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #00b4b5;" text="Clear" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+</AnchorPane>
