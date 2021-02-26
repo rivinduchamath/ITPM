@@ -66,6 +66,5 @@
       </Text>
       <Spinner id="spGroupNo" layoutX="538.0" layoutY="677.0" />
       <Spinner id="spSubGroupNo" layoutX="1041.0" layoutY="680.0" />
-      <Button layoutX="1159.0" layoutY="783.0" mnemonicParsing="false" text="Button" />
     </children>
 </AnchorPane>
