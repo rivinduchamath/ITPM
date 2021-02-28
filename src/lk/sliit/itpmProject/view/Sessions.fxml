@@ -6,6 +6,8 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -21,7 +23,32 @@
          <tabs>
             <Tab style="-fx-background-color: green;" styleClass="common" text="Consecutive">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="17.0" layoutY="37.0" prefHeight="386.0" prefWidth="915.0">
+                          <columns>
+                            <TableColumn prefWidth="39.0" />
+                            <TableColumn prefWidth="85.0" text="ID" />
+                              <TableColumn prefWidth="130.0" text="Lecture 1" />
+                              <TableColumn prefWidth="137.0" text="Lecture 1" />
+                              <TableColumn prefWidth="140.0" text="Subject Code" />
+                              <TableColumn prefWidth="114.0" text="Subject" />
+                              <TableColumn prefWidth="114.0" text="Group ID" />
+                              <TableColumn prefWidth="114.0" text="Tag" />
+                          </columns>
+                        </TableView>
+                        <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Add Sessions">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="475.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="View">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
               </content>
             </Tab>
             <Tab style="-fx-background-color: green;" text="Parallel">
