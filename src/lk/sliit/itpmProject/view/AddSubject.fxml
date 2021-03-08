@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddSubjectController">
    <children>
       <Text layoutX="347.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Subject">
@@ -74,7 +73,7 @@
       <Spinner id="AdSNOTH" layoutX="1063.0" layoutY="214.0" />
       <Spinner id="AdSNOLH" layoutX="1063.0" layoutY="278.0" />
       <Spinner id="AdSNOEH" layoutX="1063.0" layoutY="336.0" />
-      <Button id="AdSClear" layoutX="836.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" text="Clear" />
-      <Button id="AdSSave" layoutX="1063.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" text="Save" />
+      <Button id="AdSClear" layoutX="836.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Clear" />
+      <Button id="AdSSave" layoutX="1063.0" layoutY="439.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Save" />
    </children>
 </AnchorPane>
