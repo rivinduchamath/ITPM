@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.GenerateTimeTablesController">
+   <children>
+      <Label layoutX="91.0" layoutY="63.0" prefHeight="54.0" prefWidth="411.0" style="-fx-font: green;" text="Generate Time Tables">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Label>
+      <JFXTabPane layoutX="215.0" layoutY="155.0" minWidth="-Infinity" prefHeight="608.0" prefWidth="951.0" style="-fx-background-color: white;">
+         <tabs>
+            <Tab style="-fx-background-color: green;" styleClass="common" text="Lecture">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="17.0" layoutY="120.0" prefHeight="432.0" prefWidth="915.0">
+                           <columns>
+                              <TableColumn prefWidth="103.0" text="Time Slots" />
+                              <TableColumn prefWidth="142.0" text="Monday" />
+                              <TableColumn prefWidth="167.0" text="Tuesday" />
+                              <TableColumn prefWidth="175.0" text="Wednesday" />
+                              <TableColumn prefWidth="156.0" text="Thursday" />
+                              <TableColumn prefWidth="149.0" text="Friday" />
+                           </columns>
+                        </TableView>
+                        <JFXButton layoutX="586.0" layoutY="47.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="743.0" layoutY="47.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXComboBox layoutX="273.0" layoutY="50.0" prefHeight="31.0" prefWidth="284.0" />
+                        <Label layoutX="180.0" layoutY="52.0" text="Lecture">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: green;" text="Student">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="18.0" layoutY="125.0" prefHeight="432.0" prefWidth="915.0">
+                           <columns>
+                              <TableColumn prefWidth="103.0" text="Time Slots" />
+                              <TableColumn prefWidth="142.0" text="Monday" />
+                              <TableColumn prefWidth="167.0" text="Tuesday" />
+                              <TableColumn prefWidth="175.0" text="Wednesday" />
+                              <TableColumn prefWidth="156.0" text="Thursday" />
+                              <TableColumn prefWidth="149.0" text="Friday" />
+                           </columns>
+                        </TableView>
+                        <JFXButton layoutX="581.0" layoutY="40.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="739.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXComboBox layoutX="264.0" layoutY="43.0" prefHeight="31.0" prefWidth="284.0" />
+                        <Label layoutX="171.0" layoutY="45.0" text="Group">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: green;" text="Location">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="18.0" layoutY="125.0" prefHeight="432.0" prefWidth="915.0">
+                           <columns>
+                              <TableColumn prefWidth="103.0" text="Time Slots" />
+                              <TableColumn prefWidth="142.0" text="Monday" />
+                              <TableColumn prefWidth="167.0" text="Tuesday" />
+                              <TableColumn prefWidth="175.0" text="Wednesday" />
+                              <TableColumn prefWidth="156.0" text="Thursday" />
+                              <TableColumn prefWidth="149.0" text="Friday" />
+                           </columns>
+                        </TableView>
+                        <JFXButton layoutX="581.0" layoutY="40.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="739.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXComboBox layoutX="264.0" layoutY="43.0" prefHeight="31.0" prefWidth="284.0" />
+                        <Label layoutX="171.0" layoutY="45.0" text="Location">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

@@ -1,11 +1,11 @@
 package lk.sliit.itpmProject;
 
-
 import javafx.scene.control.Alert;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import lk.sliit.itpmProject.db.DBConnection;
 
@@ -31,6 +31,9 @@ public class AppInitializer extends Application {
 
 
             DBConnection.getInstance().getConnection();
+
+
+
             URL resource = this.getClass().getResource("/lk/sliit/itpmProject/view/MainForm.fxml");
             Parent root = FXMLLoader.load(resource);
             Scene mainScene = new Scene(root);
