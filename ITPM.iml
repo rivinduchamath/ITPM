@@ -14,5 +14,6 @@
     <orderEntry type="library" name="Maven: Arquillian JUnit:Release" level="project" />
     <orderEntry type="library" name="Cryptography" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.22" level="project" />
+    <orderEntry type="library" name="jfoenix-8.0.8" level="project" />
   </component>
 </module>

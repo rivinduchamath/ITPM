@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #d3d8d8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddStudentController">
+   <children>
+      <Text layoutX="470.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Student Groups">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Text layoutX="366.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Year Semester :" wrappingWidth="233.046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="366.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="740.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group ID :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField id="txtGroupId" layoutX="486.0" layoutY="340.0" prefHeight="28.0" prefWidth="171.0" />
+      <TextField id="txtSubGroupId" layoutX="888.0" layoutY="342.0" prefHeight="28.0" prefWidth="171.0" />
+      <Button id="btnGenerate" graphicTextGap="6.0" layoutX="1123.0" layoutY="341.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <TextField id="txtAcaYearSem" layoutX="606.0" layoutY="131.0" prefHeight="28.0" prefWidth="171.0" />
+      <Text layoutX="364.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme :" wrappingWidth="209.046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ChoiceBox id="cbProgramme" layoutX="486.0" layoutY="237.0" prefHeight="28.0" prefWidth="288.0" />
+      <Text layoutX="367.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Number :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="740.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group Number  :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Spinner id="spGroupNo" layoutX="523.0" layoutY="454.0" />
+      <Spinner id="spSubGroupNo" layoutX="941.0" layoutY="454.0" />
+      <Button id="btnSave" graphicTextGap="6.0" layoutX="439.0" layoutY="607.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #5c9a48;" text="Save" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Button id="btnClear" graphicTextGap="6.0" layoutX="806.0" layoutY="607.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #00b4b5;" text="Clear" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

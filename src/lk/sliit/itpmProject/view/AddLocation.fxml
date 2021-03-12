@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.Sessions">
+    <children>
+        <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Add Locations">
+            <font>
+                <Font name="Arial" size="40.0" />
+            </font>
+        </Label>
+        <JFXTabPane layoutX="205.0" layoutY="145.0" minWidth="-Infinity" prefHeight="608.0" prefWidth="951.0" style="-fx-background-color: white;">
+            <tabs>
+                <Tab style="-fx-background-color: green;" styleClass="common" text="Sessions">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView layoutX="17.0" layoutY="37.0" prefHeight="386.0" prefWidth="915.0">
+                                    <columns>
+                                        <TableColumn prefWidth="39.0" />
+                                        <TableColumn prefWidth="85.0" text="ID" />
+                                        <TableColumn prefWidth="130.0" text="Lecture 1" />
+                                        <TableColumn prefWidth="137.0" text="Lecture 1" />
+                                        <TableColumn prefWidth="140.0" text="Subject Code" />
+                                        <TableColumn prefWidth="114.0" text="Subject" />
+                                        <TableColumn prefWidth="114.0" text="Group ID" />
+                                        <TableColumn prefWidth="114.0" text="Tag" />
+                                    </columns>
+                                </TableView>
+                                <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Add Sessions">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton layoutX="475.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="View">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color: green;" text="Consecutive">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color: green;" text="Not Avilable Times">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1034.0" style="-fx-background-color: white;">
+                            <children>
+                                <Label layoutX="33.0" layoutY="42.0" prefHeight="21.0" prefWidth="360.0" text="Lectures, Groups and Sub Groups">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="75.0" layoutY="152.0" prefHeight="27.0" prefWidth="111.0" text="Select Room">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="75.0" layoutY="264.0" prefHeight="27.0" prefWidth="94.0" text="Select Day">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="550.0" layoutY="264.0" prefHeight="27.0" prefWidth="83.0" text="End Time">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="550.0" layoutY="152.0" prefHeight="27.0" prefWidth="146.0" text="Start Time">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <JFXTextField layoutX="658.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
+                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: Red;" text="Add Session">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: orange;" text="Clear">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </JFXButton>
+                        <JFXTextField layoutX="658.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
+                        <JFXTextField layoutX="213.0" layoutY="150.0" prefHeight="31.0" prefWidth="244.0" />
+                        <JFXTextField layoutX="213.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="../assert/home-icon.png" />
+            </image></ImageView>
+        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="../assert/lecture-1-300x300.png" />
+            </image></ImageView>
+        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="../assert/clipart1593805.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="../assert/open7days-icon.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="../assert/google-maps-location-icon-14.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
