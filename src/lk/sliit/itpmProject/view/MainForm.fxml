@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
+<AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
    <children>
       <ImageView fx:id="iconStudent" fitHeight="143.0" fitWidth="146.0" layoutX="205.0" layoutY="419.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -29,12 +29,12 @@
             <Image url="@../assert/schedule-icon (1).png" />
          </image>
       </ImageView>
-      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM">
+      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM" textFill="#8338ab">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="533.0" layoutY="99.0" prefHeight="73.0" prefWidth="245.0" text="ABC Institute">
+      <Label layoutX="533.0" layoutY="99.0" prefHeight="73.0" prefWidth="245.0" text="ABC Institute" textFill="#8338ab">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
