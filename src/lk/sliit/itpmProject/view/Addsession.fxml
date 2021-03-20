@@ -42,7 +42,7 @@
                            </font>
                         </Text>
                         <TextField id="selectedlecturersAS" layoutX="230.0" layoutY="217.0" prefHeight="31.0" prefWidth="580.0" />
-                        <Button id="btnnextAS" layoutX="461.0" layoutY="314.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Next" textFill="WHITE">
+                        <Button id="btnnextAS" layoutX="230.0" layoutY="312.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Next" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font></Button>
@@ -56,7 +56,7 @@
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Button>
-                        <Button id="btnclearAS" layoutX="660.0" layoutY="313.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #980606;" text="Clear" textFill="WHITE">
+                        <Button id="btnclearAS" layoutX="424.0" layoutY="313.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #980606;" text="Clear" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font></Button>
