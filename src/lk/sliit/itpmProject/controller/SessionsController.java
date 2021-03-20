@@ -1,4 +1,4 @@
 package lk.sliit.itpmProject.controller;
 
-public class Sessions {
+public class SessionsController {
 }
