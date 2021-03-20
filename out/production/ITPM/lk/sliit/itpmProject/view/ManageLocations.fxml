@@ -5,12 +5,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLocationsController">
    <children>
       <Text fontSmoothingType="LCD" layoutX="278.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LOCATIONS">
@@ -60,9 +60,9 @@
       <TextField id="buildingn" layoutX="520.0" layoutY="466.0" />
       <TextField id="roomn" layoutX="520.0" layoutY="542.0" />
       <TextField id="city" layoutX="521.0" layoutY="611.0" />
-      <Button id="upd" layoutX="186.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Update" />
-      <Button id="del" layoutX="431.0" layoutY="767.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Delete" />
-      <Button id="ear" layoutX="661.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Clear" />
+      <Button id="upd" layoutX="186.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #3a97f8;" text="Update" />
+      <Button id="del" layoutX="431.0" layoutY="767.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #c4566e;" text="Delete" />
+      <Button id="ear" layoutX="661.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #00b4b5;" text="Clear" />
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/home-icon.png" />

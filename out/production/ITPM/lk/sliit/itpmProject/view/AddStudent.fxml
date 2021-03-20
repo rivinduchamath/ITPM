@@ -10,9 +10,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #d3d8d8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddStudentController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #d3d8d8;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddStudentController">
+
    <children>
-      <Text layoutX="470.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Student Groups">
+      <Text fill="#8338ab" layoutX="470.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Student Groups">
          <font>
             <Font size="41.0" />
          </font>

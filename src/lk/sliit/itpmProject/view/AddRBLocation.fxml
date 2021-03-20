@@ -14,7 +14,8 @@
 
 <AnchorPane fx:id="root1" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationController">
     <children>
-        <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Add Locations">
+        <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" text="Add Locations">
+
             <font>
                 <Font name="Arial" size="40.0" />
             </font>
