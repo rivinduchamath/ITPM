@@ -13,20 +13,20 @@
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="iconMap" fitHeight="150.0" fitWidth="200.0" layoutX="461.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconMap" fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="949.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="161.0" layoutX="711.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="161.0" layoutX="467.0" layoutY="416.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image>
       </ImageView>
       <ImageView fx:id="iconTimeTable" fitHeight="150.0" fitWidth="200.0" layoutX="982.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assert/schedule-icon (1).png" />
+            <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
       <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM">
