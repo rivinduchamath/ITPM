@@ -89,7 +89,7 @@
       </ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assert/open7days-icon.jpg" />
+            <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">

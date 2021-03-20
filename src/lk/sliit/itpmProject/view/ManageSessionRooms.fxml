@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSessionRoomsController">
    <children>
-      <Text fill="#8338ab" fontSmoothingType="LCD" layoutX="236.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Session Rooms">
+      <Text fill="#8338ab" fontSmoothingType="LCD" layoutX="132.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Session Rooms">
          <font>
             <Font size="36.0" />
          </font>
@@ -27,47 +27,47 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <DropdownButton id="selects" layoutX="574.0" layoutY="227.0">
+      <DropdownButton id="selects" layoutX="520.0" layoutY="221.0">
           <items>
               <MenuItem text="Choice 1" />
               <MenuItem text="Choice 2" />
               <MenuItem text="Choice 3" />
           </items>
       </DropdownButton>
-      <DropdownButton id="selectr" layoutX="574.0" layoutY="359.0">
+      <DropdownButton id="selectr" layoutX="520.0" layoutY="354.0">
          <items>
             <MenuItem text="Choice 1" />
             <MenuItem text="Choice 2" />
             <MenuItem text="Choice 3" />
          </items>
       </DropdownButton>
-      <Text layoutX="286.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Session">
+      <Text layoutX="286.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Session">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <TextArea id="selecteds" layoutX="555.0" layoutY="489.0" prefHeight="167.0" prefWidth="422.0" />
-      <Button id="sub" layoutX="287.0" layoutY="750.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" text="Submit" />
-      <Button id="lea" layoutX="564.0" layoutY="746.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #00b4b5;" text="Clear" />
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <TextArea id="selecteds" layoutX="520.0" layoutY="436.0" prefHeight="81.0" prefWidth="422.0" />
+      <Button id="sub" layoutX="528.0" layoutY="545.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #064E98;" text="Submit" />
+      <Button id="lea" layoutX="704.0" layoutY="545.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #980606;" text="Clear" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="77.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/home-icon.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="77.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="77.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="77.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assert/open7days-icon.jpg" />
+            <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="77.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>

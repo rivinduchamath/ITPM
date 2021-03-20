@@ -15,12 +15,12 @@
 <AnchorPane prefHeight="865.0" prefWidth="1300.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSubjectController">
 
    <children>
-      <Text fill="#8338ab" layoutX="276.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Subject">
+      <Text fill="#8338ab" layoutX="163.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Subject">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-      <TableView layoutX="332.0" layoutY="190.0" prefHeight="243.0" prefWidth="584.0">
+      <TableView layoutX="336.0" layoutY="200.0" prefHeight="243.0" prefWidth="614.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
           <TableColumn prefWidth="127.0" text="Subject Name" />
@@ -29,9 +29,18 @@
             <TableColumn prefWidth="125.0" text="Offered Sem" />
         </columns>
       </TableView>
-      <Button id="MSUpdateBTN" layoutX="980.0" layoutY="227.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #3a97f8;" text="Update" />
-      <Button id="MSDeleteBTN" layoutX="980.0" layoutY="303.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #c4566e;" text="Delete" />
-      <Button id="MSClearBTN" layoutX="980.0" layoutY="372.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
+      <Button id="MSUpdateBTN" layoutX="999.0" layoutY="231.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button id="MSDeleteBTN" layoutX="999.0" layoutY="307.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #980606;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button id="MSClearBTN" layoutX="999.0" layoutY="376.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #649292;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
       <Text layoutX="337.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offered Year">
          <font>
             <Font size="20.0" />
@@ -89,25 +98,25 @@
       <TextField id="MSNOTH" layoutX="1037.0" layoutY="558.0" />
       <TextField id="MSNOLH" layoutX="1037.0" layoutY="624.0" />
       <TextField id="MSNOEH" layoutX="1037.0" layoutY="709.0" />
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="108.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/home-icon.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="108.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="108.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="108.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assert/open7days-icon.jpg" />
+            <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="108.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
