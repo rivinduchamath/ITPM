@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationsTableController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="317.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LOCATIONS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <TableView layoutX="190.0" layoutY="266.0" prefHeight="200.0" prefWidth="623.0">
+         <columns>
+            <TableColumn prefWidth="46.4000244140625" text="ID" />
+            <TableColumn prefWidth="76.0" text="LECTURER 1" />
+            <TableColumn prefWidth="83.20001220703125" text="LECTURER 2" />
+            <TableColumn prefWidth="92.79998779296875" text="SUBJECT CODE" />
+            <TableColumn prefWidth="96.0" text="SUBJECT NAME" />
+            <TableColumn prefWidth="76.0" text="GROUP ID" />
+            <TableColumn prefWidth="75.0" text="TAG" />
+            <TableColumn prefWidth="75.0" text="ROOM" />
+         </columns>
+      </TableView>
+      <Text layoutX="190.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sessions">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button id="addr" layoutX="272.0" layoutY="585.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Add Room" />
+      <Button id="ref" layoutX="558.0" layoutY="585.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Refresh" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

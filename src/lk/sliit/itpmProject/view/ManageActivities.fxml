@@ -78,7 +78,7 @@
        </ImageView>
        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
            <image>
-               <Image url="@../assert/schedule-icon (1).png" />
+               <Image url="@../assert/timetable.png" />
            </image>
        </ImageView>
    </children>

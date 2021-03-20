@@ -8,11 +8,12 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.Sessions">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.SessionsController">
    <children>
       <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Sessions and Not Avilable Time Allocations">
          <font>
@@ -67,7 +68,7 @@
                      <children>
                         <Label layoutX="33.0" layoutY="42.0" prefHeight="21.0" prefWidth="360.0" text="Lectures, Groups and Sub Groups">
                            <font>
-                              <Font name="System Bold" size="18.0" />
+                              <Font name="System Bold" size="21.0" />
                            </font>
                         </Label>
                         <Label layoutX="75.0" layoutY="152.0" prefHeight="27.0" prefWidth="146.0" text="Select Lecture">
@@ -90,27 +91,27 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <JFXComboBox layoutX="279.0" layoutY="150.0" prefHeight="31.0" prefWidth="229.0" />
-                        <JFXComboBox layoutX="279.0" layoutY="217.0" prefHeight="31.0" prefWidth="229.0" />
-                        <JFXComboBox layoutX="279.0" layoutY="282.0" prefHeight="31.0" prefWidth="229.0" />
-                        <JFXComboBox layoutX="279.0" layoutY="351.0" prefHeight="31.0" prefWidth="229.0" />
+                        <JFXComboBox layoutX="272.0" layoutY="148.0" prefHeight="31.0" prefWidth="229.0" />
+                        <JFXComboBox layoutX="272.0" layoutY="216.0" prefHeight="31.0" prefWidth="229.0" />
+                        <JFXComboBox layoutX="272.0" layoutY="284.0" prefHeight="31.0" prefWidth="229.0" />
+                        <JFXComboBox layoutX="272.0" layoutY="351.0" prefHeight="31.0" prefWidth="229.0" />
                         <Label layoutX="550.0" layoutY="152.0" prefHeight="27.0" prefWidth="146.0" text="Time">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <JFXTextField layoutX="627.0" layoutY="150.0" prefHeight="31.0" prefWidth="244.0" />
-                        <JFXButton layoutX="614.0" layoutY="231.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: Red;" text="Submit">
+                        <JFXTextField layoutX="627.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
+                        <JFXButton layoutX="615.0" layoutY="246.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: #2874A6;" text="Submit" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="614.0" layoutY="317.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: orange;" text="View">
+                        <JFXButton layoutX="614.0" layoutY="317.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #1E8449;" text="View" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="777.0" layoutY="316.0" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: blue;" text="Clear">
+                        <JFXButton layoutX="777.0" layoutY="316.0" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #B03A2E;" text="Clear" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -121,5 +122,28 @@
             </Tab>
          </tabs>
       </JFXTabPane>
+       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../assert/home-icon.png" />
+           </image></ImageView>
+       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../assert/lecture-1-300x300.png" />
+           </image></ImageView>
+       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../assert/clipart1593805.png" />
+           </image>
+       </ImageView>
+       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../assert/open7days-icon.jpg" />
+           </image>
+       </ImageView>
+       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../assert/google-maps-location-icon-14.jpg" />
+           </image>
+       </ImageView>
    </children>
 </AnchorPane>

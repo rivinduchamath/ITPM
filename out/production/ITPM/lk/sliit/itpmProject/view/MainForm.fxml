@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
-
+<AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
+   <children>
+      <ImageView fx:id="iconStudent" fitHeight="143.0" fitWidth="146.0" layoutX="205.0" layoutY="419.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconMap" fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="949.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="161.0" layoutX="467.0" layoutY="416.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="@../assert/lecture-1-300x300.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconTimeTable" fitHeight="150.0" fitWidth="200.0" layoutX="982.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/timetable.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="99.0" prefHeight="73.0" prefWidth="245.0" text="ABC Institute">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="367.0" layoutY="677.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="370.0" layoutY="707.0" prefHeight="32.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pgb" alignment="CENTER" layoutX="367.0" layoutY="749.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2021 SLIIT - ITPM">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

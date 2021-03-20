@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLocationsController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="278.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LOCATIONS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <TableView layoutX="283.0" layoutY="202.0" prefHeight="200.0" prefWidth="377.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="75.0" text="BUILDING" />
+            <TableColumn prefWidth="75.0" text="ROOM" />
+            <TableColumn prefWidth="75.0" text="ROOM TYPE" />
+            <TableColumn prefWidth="75.0" text="CAPACITY" />
+        </columns>
+      </TableView>
+      <Text layoutX="283.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton id="lectureh" layoutX="482.0" layoutY="689.0" mnemonicParsing="false" text="Lecture Hall">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="tory" layoutX="667.0" layoutY="689.0" mnemonicParsing="false" text="Laboratory">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <TextField id="buildingn" layoutX="520.0" layoutY="466.0" />
+      <TextField id="roomn" layoutX="520.0" layoutY="542.0" />
+      <TextField id="city" layoutX="521.0" layoutY="611.0" />
+      <Button id="upd" layoutX="186.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Update" />
+      <Button id="del" layoutX="431.0" layoutY="767.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Delete" />
+      <Button id="ear" layoutX="661.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Clear" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
