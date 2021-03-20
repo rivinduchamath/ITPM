@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #F8F9F9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddTagController">
+<AnchorPane fx:id="root1" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #F8F9F9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddTagController">
     <Text layoutX="87.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Working Days Hours">
         <font>
             <Font name="Arial Bold" size="40.0" />
@@ -57,25 +57,20 @@
       <font>
          <Font name="System Bold" size="14.0" />
       </font></Label>
-    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="iconHome" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
         <image>
             <Image url="@../assert/home-icon.png" />
         </image></ImageView>
-    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="iconLecture" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="299.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
         <image>
             <Image url="@../assert/lecture-1-300x300.png" />
         </image></ImageView>
-    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="iconStudent" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="443.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
         <image>
             <Image url="@../assert/clipart1593805.png" />
         </image>
     </ImageView>
-    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
-        <image>
-            <Image url="@../assert/open7days-icon.jpg" />
-        </image>
-    </ImageView>
-    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="iconLocation" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="585.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
         <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
         </image>
