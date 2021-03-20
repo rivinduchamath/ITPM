@@ -66,17 +66,11 @@
       <ChoiceBox id="ADLBuilding" layoutX="580.0" layoutY="406.0" prefWidth="150.0" />
       <ChoiceBox id="ADLLevel" layoutX="581.0" layoutY="461.0" prefWidth="150.0" />
       <TextField id="ADLRank" layoutX="581.0" layoutY="518.0" />
-<<<<<<< HEAD
       <Button id="ADLGenaralRank" layoutX="550.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #d4e983;" text="Genaral Rank" />
       <Button id="ADLClear" layoutX="722.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
       <Button id="ADLSave" layoutX="893.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #5c9a48;" text="Save" />
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
-=======
-      <Button id="ADLGenaralRank" layoutX="550.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #FF0000;" text="Genaral Rank" />
-      <Button id="ADLClear" layoutX="722.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Clear" />
-      <Button id="ADLSave" layoutX="893.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Save" />
-      <ImageView fx:id="iconHome" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="79.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
->>>>>>> 26789259dad01ad9cab62d60916b75b6a8f4321f
+
          <image>
             <Image url="@../assert/home-icon.png" />
          </image></ImageView>
