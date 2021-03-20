@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
 
    <children>
       <Text fill="#8338ab" layoutX="424.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Lecturer" wrappingWidth="290.13671875">
@@ -42,17 +42,17 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="388.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
+      <Text layoutX="393.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="387.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
+      <Text layoutX="394.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="388.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
+      <Text layoutX="392.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
          <font>
             <Font size="20.0" />
          </font>

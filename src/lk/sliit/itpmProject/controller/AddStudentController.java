@@ -43,7 +43,7 @@ public class AddStudentController {
                     root = FXMLLoader.load(this.getClass().getResource("../view/MainForm.fxml"));
                     break;
                 case "iconMap":
-                    root = FXMLLoader.load(this.getClass().getResource("../view/AddLocation.fxml"));
+                    root = FXMLLoader.load(this.getClass().getResource("../view/AddRBLocation.fxml"));
                     break;
                 case "iconLecture":
                     root = FXMLLoader.load(this.getClass().getResource("../view/AddLecturer.fxml"));

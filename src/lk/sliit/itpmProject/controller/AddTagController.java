@@ -87,7 +87,7 @@ public class AddTagController {
                     root = FXMLLoader.load(this.getClass().getResource("../view/AddLecturer.fxml"));
                     break;
                 case "iconLocation":
-                    fxmlLoader = new FXMLLoader(this.getClass().getResource("../view/AddLocation.fxml"));
+                    fxmlLoader = new FXMLLoader(this.getClass().getResource("../view/AddRBLocation.fxml"));
                     root = fxmlLoader.load();
                     break;
             }
