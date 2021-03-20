@@ -7,6 +7,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationController">
    <children>
       <Text fontSmoothingType="LCD" layoutX="320.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LOCATIONS" wrappingWidth="334.13670349121094">
@@ -54,5 +56,28 @@
       <TextField id="cap" layoutX="427.0" layoutY="521.0" />
       <Button id="cle" layoutX="233.0" layoutY="636.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="Clear" />
       <Button id="sav" layoutX="503.0" layoutY="640.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="Save" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

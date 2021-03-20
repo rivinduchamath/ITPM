@@ -9,6 +9,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLocationsController">
    <children>
       <Text fontSmoothingType="LCD" layoutX="278.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LOCATIONS">
@@ -61,5 +63,28 @@
       <Button id="upd" layoutX="186.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Update" />
       <Button id="del" layoutX="431.0" layoutY="767.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Delete" />
       <Button id="ear" layoutX="661.0" layoutY="766.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Clear" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
