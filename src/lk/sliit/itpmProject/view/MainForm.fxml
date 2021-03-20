@@ -30,7 +30,7 @@
             <Image url="@../assert/schedule-icon%20(1).png" />
          </image>
       </ImageView>
-      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="FX TIME TaBLE MANAGEMENT SYSTEM">
+      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
