@@ -9,8 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
 
    <children>
       <Text layoutX="424.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Lecturer" wrappingWidth="290.13671875">
@@ -72,25 +71,25 @@
       <Button id="ADLSave" layoutX="893.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Save" />
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="../assert/home-icon.png" />
+            <Image url="@../assert/home-icon.png" />
          </image></ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="../assert/lecture-1-300x300.png" />
+            <Image url="@../assert/clipart1593805.png" />
          </image></ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="../assert/clipart1593805.png" />
+            <Image url="@../assert/lecture-1-300x300.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="../assert/open7days-icon.jpg" />
+            <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="../assert/google-maps-location-icon-14.jpg" />
+            <Image url="@../assert/schedule-icon%20(1).png" />
          </image>
       </ImageView>
    </children>
