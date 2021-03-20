@@ -10,38 +10,38 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #d3d8d8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddTagController">
-    <Text layoutX="570.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Tags">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddTagController">
+    <Text layoutX="297.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #8338ab;" text="Add Tags">
         <font>
-            <Font size="41.0" />
+            <Font size="36.0" />
         </font>
     </Text>
-   <Text layoutX="397.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Name :">
+   <Text layoutX="397.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Name :">
       <font>
          <Font size="20.0" />
       </font>
    </Text>
-   <TextField id="txtTagName" layoutX="539.0" layoutY="118.0" prefHeight="31.0" prefWidth="396.0">
+   <TextField id="txtTagName" layoutX="539.0" layoutY="124.0" prefHeight="31.0" prefWidth="396.0">
       <effect>
          <Blend />
       </effect>
    </TextField>
-   <TextField id="txtTagCode" layoutX="539.0" layoutY="195.0" prefHeight="31.0" prefWidth="396.0">
+   <TextField id="txtTagCode" layoutX="539.0" layoutY="201.0" prefHeight="31.0" prefWidth="396.0">
       <effect>
          <Blend />
       </effect>
    </TextField>
-   <Text layoutX="397.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Code :">
+   <Text layoutX="397.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Code :">
       <font>
          <Font size="20.0" />
       </font>
    </Text>
-   <Text layoutX="397.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Related Tag :">
+   <Text layoutX="397.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Related Tag :">
       <font>
          <Font size="20.0" />
       </font>
    </Text>
-   <ChoiceBox id="spRelatedTag" layoutX="539.0" layoutY="268.0" prefHeight="31.0" prefWidth="396.0" />
+   <ChoiceBox id="spRelatedTag" layoutX="539.0" layoutY="280.0" prefHeight="31.0" prefWidth="396.0" />
    <Button id="btnSave" graphicTextGap="6.0" layoutX="494.0" layoutY="382.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #5c9a48;" text="Save" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
    <Button id="btnClear" graphicTextGap="6.0" layoutX="861.0" layoutY="382.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #00b4b5;" text="Clear" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
    <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">

@@ -12,16 +12,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root1" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationController">
+<AnchorPane fx:id="root1" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationController">
     <children>
-        <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Add Locations">
+        <Label layoutX="94.0" layoutY="52.0" prefHeight="54.0" prefWidth="780.0" text="Add Locations" textFill="#8338ab">
             <font>
-                <Font name="Arial" size="40.0" />
+                <Font name="Arial" size="36.0" />
             </font>
         </Label>
         <JFXTabPane layoutX="205.0" layoutY="145.0" minWidth="-Infinity" prefHeight="608.0" prefWidth="1051.0" style="-fx-background-color: white;">
             <tabs>
-                <Tab style="-fx-background-color: green;" styleClass="common" text="Sessions">
+                <Tab style="-fx-background-color: #757575;" styleClass="common" text="Sessions">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1050.0">
                             <children>
@@ -38,12 +38,12 @@
                               <TableColumn prefWidth="75.0" text="Room" />
                                     </columns>
                                 </TableView>
-                                <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Add Room">
+                                <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #a1e356;" text="Add Room">
                                     <font>
                                         <Font name="System Bold" size="17.0" />
                                     </font>
                                 </JFXButton>
-                                <JFXButton layoutX="475.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Refresh">
+                                <JFXButton layoutX="643.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #82bbe8;" text="Refresh">
                                     <font>
                                         <Font name="System Bold" size="17.0" />
                                     </font>
@@ -52,47 +52,47 @@
                         </AnchorPane>
                     </content>
                 </Tab>
-                <Tab style="-fx-background-color: green;" text="Consecutive">
+                <Tab style="-fx-background-color: #757575;" text="Consecutive">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                 </Tab>
-                <Tab style="-fx-background-color: green;" text="Not Avilable Times">
+                <Tab style="-fx-background-color: #757575;" text="Not Avilable Times">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1034.0" style="-fx-background-color: white;">
                             <children>
                                 <Label layoutX="33.0" layoutY="42.0" prefHeight="21.0" prefWidth="360.0" text="Lectures, Groups and Sub Groups">
                                     <font>
-                                        <Font name="System Bold" size="18.0" />
+                                        <Font size="20.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="75.0" layoutY="152.0" prefHeight="27.0" prefWidth="111.0" text="Select Room">
                                     <font>
-                                        <Font name="System Bold" size="18.0" />
+                                        <Font size="20.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="75.0" layoutY="264.0" prefHeight="27.0" prefWidth="94.0" text="Select Day">
                                     <font>
-                                        <Font name="System Bold" size="18.0" />
+                                        <Font size="20.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="550.0" layoutY="264.0" prefHeight="27.0" prefWidth="83.0" text="End Time">
                                     <font>
-                                        <Font name="System Bold" size="18.0" />
+                                        <Font size="20.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="550.0" layoutY="152.0" prefHeight="27.0" prefWidth="146.0" text="Start Time">
                                     <font>
-                                        <Font name="System Bold" size="18.0" />
+                                        <Font size="20.0" />
                                     </font>
                                 </Label>
                                 <JFXTextField layoutX="658.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
-                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: Red;" text="Add Session">
+                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #a1e356;" text="Add Session">
                                     <font>
                                         <Font name="System Bold" size="17.0" />
                                     </font>
                                 </JFXButton>
-                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: orange;" text="Clear">
+                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #00b4b5;" text="Clear">
                                     <font>
                                         <Font name="System Bold" size="16.0" />
                                     </font>
@@ -121,7 +121,7 @@
         </ImageView>
         <ImageView fx:id="iconTimeTable" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="603.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../assert/open7days-icon.jpg" />
+                <Image url="@../assert/timetable.png" />
             </image>
         </ImageView>
     </children>

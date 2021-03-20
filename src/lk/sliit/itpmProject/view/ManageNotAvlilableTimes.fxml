@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageNotAvailableTimesController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageNotAvailableTimesController">
    <children>
-      <Label layoutX="117.0" layoutY="80.0" text="Manage Not Available Times">
+      <Label layoutX="222.0" layoutY="115.0" text="Manage Not Available Times" textFill="#8338ab">
          <font>
-            <Font name="System Bold" size="41.0" />
+            <Font size="36.0" />
          </font>
       </Label>
       <TableView layoutX="291.0" layoutY="285.0" prefHeight="369.0" prefWidth="802.0">
@@ -25,17 +25,17 @@
             <TableColumn prefWidth="178.0" text="Sub-Group ID" />
         </columns>
       </TableView>
-      <JFXButton layoutX="1130.0" layoutY="326.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: Green;" text="Refresh" textFill="WHITE">
+      <JFXButton layoutX="1130.0" layoutY="326.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #82bbe8;" text="Refresh" textFill="#5e5e5e">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="1130.0" layoutY="391.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Back" textFill="#eeeeee">
+      <JFXButton layoutX="1130.0" layoutY="391.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #7ff5d1;" text="Back" textFill="#515151">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="1130.0" layoutY="449.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: red;" text="Delete">
+      <JFXButton layoutX="1130.0" layoutY="449.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #c4566e;" text="Delete">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>

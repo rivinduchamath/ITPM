@@ -12,27 +12,27 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSubjectController">
+<AnchorPane prefHeight="865.0" prefWidth="1300.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSubjectController">
 
    <children>
-      <Text layoutX="366.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Subject">
+      <Text fill="#8338ab" layoutX="276.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Subject">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-      <TableView layoutX="332.0" layoutY="190.0" prefHeight="243.0" prefWidth="490.0">
+      <TableView layoutX="332.0" layoutY="190.0" prefHeight="243.0" prefWidth="584.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="102.0" text="Subject Name" />
-            <TableColumn prefWidth="85.0" text="Subject Code" />
-            <TableColumn prefWidth="83.0" text="Offered Year" />
-            <TableColumn prefWidth="144.0" text="Offered Sem" />
+          <TableColumn prefWidth="127.0" text="Subject Name" />
+            <TableColumn prefWidth="128.0" text="Subject Code" />
+            <TableColumn prefWidth="128.0" text="Offered Year" />
+            <TableColumn prefWidth="125.0" text="Offered Sem" />
         </columns>
       </TableView>
-      <Button id="MSUpdateBTN" layoutX="928.0" layoutY="236.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #3a97f8;" text="Update" />
-      <Button id="MSDeleteBTN" layoutX="928.0" layoutY="312.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #c4566e;" text="Delete" />
-      <Button id="MSClearBTN" layoutX="928.0" layoutY="381.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
-      <Text layoutX="343.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offered Year">
+      <Button id="MSUpdateBTN" layoutX="980.0" layoutY="227.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #3a97f8;" text="Update" />
+      <Button id="MSDeleteBTN" layoutX="980.0" layoutY="303.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #c4566e;" text="Delete" />
+      <Button id="MSClearBTN" layoutX="980.0" layoutY="372.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
+      <Text layoutX="337.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offered Year">
          <font>
             <Font size="20.0" />
          </font>
@@ -78,15 +78,15 @@
             <Font size="15.0" />
          </font>
       </CheckBox>
-      <CheckBox id="MSBTN2" layoutX="633.0" layoutY="563.0" mnemonicParsing="false" text="2nd Semester">
+      <CheckBox id="MSBTN2" layoutX="511.0" layoutY="597.0" mnemonicParsing="false" text="2nd Semester">
          <font>
             <Font size="15.0" />
          </font>
       </CheckBox>
       <TextField id="MSSubjectName" layoutX="493.0" layoutY="645.0" />
       <TextField id="MSSubjectCode" layoutX="494.0" layoutY="709.0" />
-      <TextField id="MSNOLH" layoutX="1026.0" layoutY="486.0" />
-      <TextField id="MSNOTH" layoutX="1037.0" layoutY="551.0" />
+      <TextField id="MSNOLH" layoutX="1040.0" layoutY="487.0" />
+      <TextField id="MSNOTH" layoutX="1037.0" layoutY="558.0" />
       <TextField id="MSNOLH" layoutX="1037.0" layoutY="624.0" />
       <TextField id="MSNOEH" layoutX="1037.0" layoutY="709.0" />
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">

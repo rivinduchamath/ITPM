@@ -10,11 +10,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSessionRoomsController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageSessionRoomsController">
    <children>
-      <Text fontSmoothingType="LCD" layoutX="236.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SESSION ROOMS">
+      <Text fill="#8338ab" fontSmoothingType="LCD" layoutX="236.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Session Rooms">
          <font>
-            <Font size="40.0" />
+            <Font size="36.0" />
          </font>
       </Text>
       <Text layoutX="286.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Session">
@@ -46,9 +46,9 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <TextArea id="selecteds" layoutX="555.0" layoutY="489.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button id="sub" layoutX="286.0" layoutY="779.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Submit" />
-      <Button id="lea" layoutX="562.0" layoutY="779.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #00b4b5;" text="Clear" />
+      <TextArea id="selecteds" layoutX="555.0" layoutY="489.0" prefHeight="167.0" prefWidth="422.0" />
+      <Button id="sub" layoutX="287.0" layoutY="750.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" text="Submit" />
+      <Button id="lea" layoutX="564.0" layoutY="746.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #00b4b5;" text="Clear" />
       <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/home-icon.png" />
