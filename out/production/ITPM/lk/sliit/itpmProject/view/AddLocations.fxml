@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLocationController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="320.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LOCATIONS" wrappingWidth="334.13670349121094">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Text fill="#10087c" layoutX="245.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Rooms Building wise" wrappingWidth="351.73670959472656">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="233.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Name" wrappingWidth="173.3367462158203">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="229.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Name" wrappingWidth="165.33673095703125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="229.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type" wrappingWidth="165.33673095703125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="229.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" wrappingWidth="127.73675537109375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton id="lhall" layoutX="427.0" layoutY="446.0" mnemonicParsing="false" text="Lecture Hall">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="lab" layoutX="611.0" layoutY="446.0" mnemonicParsing="false" text="Laboratory">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <TextField id="bname" layoutX="430.0" layoutY="298.0" />
+      <TextField id="rname" layoutX="430.0" layoutY="370.0" />
+      <TextField id="cap" layoutX="427.0" layoutY="521.0" />
+      <Button id="cle" layoutX="233.0" layoutY="636.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="Clear" />
+      <Button id="sav" layoutX="503.0" layoutY="640.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="Save" />
+   </children>
+</AnchorPane>

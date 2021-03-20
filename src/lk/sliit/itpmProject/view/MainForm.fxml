@@ -6,26 +6,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
+<AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
    <children>
-      <ImageView fitHeight="143.0" fitWidth="146.0" layoutX="205.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconStudent" fitHeight="143.0" fitWidth="146.0" layoutX="205.0" layoutY="419.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="461.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconMap" fitHeight="150.0" fitWidth="200.0" layoutX="461.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="949.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="711.0" layoutY="415.0">
+      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="161.0" layoutX="711.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="982.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconTimeTable" fitHeight="150.0" fitWidth="200.0" layoutX="982.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/schedule-icon%20(1).png" />
          </image>

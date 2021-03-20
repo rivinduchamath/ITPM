@@ -5,12 +5,15 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 
 <AnchorPane id="MLCenter" prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLecturersController">
+
    <children>
       <Text layoutX="305.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Lecturers">
          <font>
@@ -26,9 +29,9 @@
             <TableColumn prefWidth="72.0" text="Level" />
         </columns>
       </TableView>
-      <Button id="MLUpdate" layoutX="783.0" layoutY="173.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" text="Update" />
-      <Button id="MLDelete" layoutX="785.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" text="Delete" />
-      <Button id="MLClear" layoutX="785.0" layoutY="292.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" text="Clear" />
+      <Button id="MLUpdate" layoutX="783.0" layoutY="173.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #34c0eb;" text="Update" />
+      <Button id="MLDelete" layoutX="785.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #FF0000;" text="Delete" />
+      <Button id="MLClear" layoutX="785.0" layoutY="292.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Clear" />
       <Text layoutX="313.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Name">
          <font>
             <Font size="20.0" />
@@ -77,5 +80,28 @@
       <ChoiceBox id="MLBuilding" layoutX="859.0" layoutY="509.0" prefWidth="150.0" />
       <ChoiceBox id="MLLevel" layoutX="859.0" layoutY="552.0" prefWidth="150.0" />
       <TextField id="MLRank" layoutX="860.0" layoutY="604.0" />
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/home-icon.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/lecture-1-300x300.png" />
+         </image></ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/clipart1593805.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/open7days-icon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../assert/google-maps-location-icon-14.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
