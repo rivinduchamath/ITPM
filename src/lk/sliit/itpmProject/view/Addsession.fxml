@@ -11,11 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddsessionController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddsessionController">
    <children>
       <Text fill="#8338ab" layoutX="236.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Session">
          <font>
-            <Font size="24.0" />
+            <Font size="36.0" />
          </font>
       </Text>
       <TabPane layoutX="229.0" layoutY="160.0" prefHeight="505.0" prefWidth="922.0" tabClosingPolicy="UNAVAILABLE">
@@ -29,26 +29,31 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <ChoiceBox id="selectlecturersAS" layoutX="211.0" layoutY="98.0" prefWidth="150.0" />
+                        <ChoiceBox id="selectlecturersAS" layoutX="230.0" layoutY="96.0" prefHeight="31.0" prefWidth="194.0" />
                         <Text layoutX="461.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Tag">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <ChoiceBox id="selecttagAS" layoutX="602.0" layoutY="96.0" prefWidth="150.0" />
+                        <ChoiceBox id="selecttagAS" layoutX="602.0" layoutY="96.0" prefHeight="31.0" prefWidth="206.0" />
                         <Text layoutX="38.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Lecturer(s)">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField id="selectedlecturersAS" layoutX="230.0" layoutY="217.0" prefHeight="25.0" prefWidth="450.0" />
+                        <TextField id="selectedlecturersAS" layoutX="230.0" layoutY="217.0" prefHeight="31.0" prefWidth="580.0" />
                         <Button id="btnnextAS" layoutX="461.0" layoutY="314.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #e8af82;" text="Next" />
-                        <Button id="btnclearAS" layoutX="663.0" layoutY="314.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
                         <Text layoutX="36.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
+                        <Button id="ADLClear" layoutX="732.0" layoutY="710.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnclearAS" layoutX="660.0" layoutY="313.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
                      </children>
                   </AnchorPane>
             </content>
@@ -80,20 +85,20 @@
                            </font>
                         </Text>
                         <TextField id="NOstudentAS" layoutX="635.0" layoutY="112.0" />
-                        <Text layoutX="485.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
+                        <Text layoutX="485.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
                         <TextField id="durationAS" layoutX="635.0" layoutY="255.0" />
-                        <Text layoutX="801.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hrs">
+                        <Text layoutX="579.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hrs">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Button id="btnbackAS" layoutX="399.0" layoutY="386.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Back" />
-                        <Button id="btnsubmitAS" layoutX="572.0" layoutY="386.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Submit" />
-                        <Button id="btnclearAS" layoutX="741.0" layoutY="386.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #FF0000;" text="Clear" />
+                        <Button id="btnbackAS" layoutX="315.0" layoutY="385.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Back" />
+                        <Button id="btnsubmitAS" layoutX="534.0" layoutY="385.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Submit" />
+                        <Button id="btnclearAS" layoutX="748.0" layoutY="385.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
                      </children>
                   </AnchorPane>
             </content>

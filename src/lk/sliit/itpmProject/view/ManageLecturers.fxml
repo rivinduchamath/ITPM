@@ -11,15 +11,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="MLCenter" prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLecturersController">
+<AnchorPane id="MLCenter" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLecturersController">
 
    <children>
-      <Text layoutX="305.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Lecturers">
+      <Text fill="#8338ab" layoutX="259.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Lecturers">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-      <TableView layoutX="313.0" layoutY="161.0" prefHeight="240.0" prefWidth="372.0">
+      <TableView layoutX="313.0" layoutY="161.0" prefHeight="240.0" prefWidth="375.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
           <TableColumn prefWidth="75.0" text="Name" />
@@ -36,49 +36,49 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="313.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+      <Text layoutX="313.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="313.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty">
+      <Text layoutX="313.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="313.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
+      <Text layoutX="313.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="748.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center">
+      <Text layoutX="747.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="748.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
+      <Text layoutX="749.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="748.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
+      <Text layoutX="755.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="748.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
+      <Text layoutX="755.0" layoutY="707.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
       <TextField id="MLLecturername" layoutX="473.0" layoutY="475.0" />
-      <TextField id="MLEmpID" layoutX="473.0" layoutY="521.0" />
-      <ChoiceBox id="MLFaculty" layoutX="473.0" layoutY="561.0" prefWidth="150.0" />
-      <ChoiceBox id="MLDepartment" layoutX="473.0" layoutY="607.0" prefWidth="150.0" />
-      <ChoiceBox id="MLCenter" layoutX="857.0" layoutY="460.0" prefWidth="150.0" />
-      <ChoiceBox id="MLBuilding" layoutX="859.0" layoutY="509.0" prefWidth="150.0" />
-      <ChoiceBox id="MLLevel" layoutX="859.0" layoutY="552.0" prefWidth="150.0" />
-      <TextField id="MLRank" layoutX="860.0" layoutY="604.0" /> <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <TextField id="MLEmpID" layoutX="473.0" layoutY="546.0" />
+      <ChoiceBox id="MLFaculty" layoutX="473.0" layoutY="617.0" prefHeight="31.0" prefWidth="187.0" />
+      <ChoiceBox id="MLDepartment" layoutX="473.0" layoutY="689.0" prefHeight="31.0" prefWidth="187.0" />
+      <ChoiceBox id="MLCenter" layoutX="857.0" layoutY="475.0" prefHeight="31.0" prefWidth="187.0" />
+      <ChoiceBox id="MLBuilding" layoutX="859.0" layoutY="546.0" prefHeight="31.0" prefWidth="187.0" />
+      <ChoiceBox id="MLLevel" layoutX="859.0" layoutY="611.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField id="MLRank" layoutX="857.0" layoutY="684.0" /> <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../assert/home-icon.png" />
       </image></ImageView>

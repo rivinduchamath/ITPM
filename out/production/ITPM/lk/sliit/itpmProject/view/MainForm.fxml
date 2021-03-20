@@ -34,7 +34,11 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="533.0" layoutY="99.0" prefHeight="73.0" prefWidth="245.0" text="ABC Institute" textFill="#8338ab">
+=======
+      <Label layoutX="507.0" layoutY="96.0" prefHeight="73.0" prefWidth="304.0" text="ABC INSTITUTE" textFill="#8338ab">
+>>>>>>> 8f18d26219296b0d5b591721bd8b4e630e637f0b
          <font>
             <Font name="System Bold" size="38.0" />
          </font>

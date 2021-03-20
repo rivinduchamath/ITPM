@@ -12,16 +12,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.GenerateTimeTablesController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.GenerateTimeTablesController">
    <children>
-      <Label layoutX="91.0" layoutY="63.0" prefHeight="54.0" prefWidth="411.0" style="-fx-font: green;" text="Generate Time Tables">
+      <Label layoutX="157.0" layoutY="62.0" prefHeight="54.0" prefWidth="411.0" style="-fx-font: green;" text="Generate Time Tables" textFill="#8338ab">
          <font>
-            <Font name="Arial" size="40.0" />
+            <Font name="Arial" size="36.0" />
          </font>
       </Label>
       <JFXTabPane layoutX="215.0" layoutY="155.0" minWidth="-Infinity" prefHeight="608.0" prefWidth="951.0" style="-fx-background-color: white;">
          <tabs>
-            <Tab style="-fx-background-color: green;" styleClass="common" text="Lecture">
+            <Tab style="-fx-background-color: #757575;" styleClass="common" text="Lecture">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -35,12 +35,12 @@
                               <TableColumn prefWidth="149.0" text="Friday" />
                            </columns>
                         </TableView>
-                        <JFXButton layoutX="586.0" layoutY="47.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
+                        <JFXButton layoutX="586.0" layoutY="47.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #649292;" text="Generate" textFill="#fffbfb">
                            <font>
-                              <Font name="System Bold" size="17.0" />
+                              <Font size="20.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="743.0" layoutY="47.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
+                        <JFXButton layoutX="743.0" layoutY="47.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #97935b;" text="Print" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
@@ -55,7 +55,7 @@
                   </AnchorPane>
                </content>
             </Tab>
-            <Tab style="-fx-background-color: green;" text="Student">
+            <Tab style="-fx-background-color: #757575;" text="Student">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -69,27 +69,27 @@
                               <TableColumn prefWidth="149.0" text="Friday" />
                            </columns>
                         </TableView>
-                        <JFXButton layoutX="581.0" layoutY="40.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font>
-                        </JFXButton>
-                        <JFXButton layoutX="739.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font>
-                        </JFXButton>
                         <JFXComboBox layoutX="264.0" layoutY="43.0" prefHeight="31.0" prefWidth="284.0" />
                         <Label layoutX="171.0" layoutY="45.0" text="Group">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
+                        <JFXButton layoutX="577.0" layoutY="37.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #649292;" text="Generate" textFill="#fffbfb">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="743.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #97935b;" text="Print" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
                </content>
             </Tab>
-            <Tab style="-fx-background-color: green;" text="Location">
+            <Tab style="-fx-background-color: #757575;" text="Location">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -103,22 +103,22 @@
                               <TableColumn prefWidth="149.0" text="Friday" />
                            </columns>
                         </TableView>
-                        <JFXButton layoutX="581.0" layoutY="40.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Generate">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font>
-                        </JFXButton>
-                        <JFXButton layoutX="739.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="Print">
-                           <font>
-                              <Font name="System Bold" size="17.0" />
-                           </font>
-                        </JFXButton>
                         <JFXComboBox layoutX="264.0" layoutY="43.0" prefHeight="31.0" prefWidth="284.0" />
                         <Label layoutX="171.0" layoutY="45.0" text="Location">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
+                        <JFXButton layoutX="757.0" layoutY="40.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #97935b;" text="Print" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="579.0" layoutY="37.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #649292;" text="Generate" textFill="#fffbfb">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
                </content>
