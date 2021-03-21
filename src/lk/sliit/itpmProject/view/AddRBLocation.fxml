@@ -114,12 +114,12 @@
                                     </font>
                                 </Label>
                                 <JFXTextField layoutX="658.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
-                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #a1e356;" text="Add Session">
+                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #064E98;" text="Add Session" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="17.0" />
                                     </font>
                                 </JFXButton>
-                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #00b4b5;" text="Clear">
+                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #980606;" text="Clear" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="16.0" />
                                     </font>
