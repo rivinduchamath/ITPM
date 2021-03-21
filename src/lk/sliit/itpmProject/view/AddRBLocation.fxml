@@ -90,7 +90,7 @@
                             <children>
                                 <Label layoutX="33.0" layoutY="42.0" prefHeight="21.0" prefWidth="360.0" text="Lectures, Groups and Sub Groups">
                                     <font>
-                                        <Font size="20.0" />
+                                        <Font name="System Bold" size="21.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="75.0" layoutY="152.0" prefHeight="27.0" prefWidth="111.0" text="Select Room">
