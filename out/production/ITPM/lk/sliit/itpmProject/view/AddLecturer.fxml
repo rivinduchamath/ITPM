@@ -1,92 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
+<AnchorPane fx:id="root1" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.AddLecturerController">
 
    <children>
-      <Text fill="#8338ab" layoutX="424.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Lecturer" wrappingWidth="290.13671875">
+      <Text fill="#8338ab" layoutX="185.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Lecturer" wrappingWidth="290.13671875">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-      <Text layoutX="393.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Name">
+      <Text layoutX="331.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Name">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="393.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+      <Text layoutX="332.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="393.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty">
+      <Text layoutX="332.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="393.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
+      <Text layoutX="331.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="394.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center">
+      <Text layoutX="332.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="393.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
+      <Text layoutX="331.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="394.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
+      <Text layoutX="331.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="392.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
+      <Text layoutX="330.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <TextField layoutX="581.0" layoutY="123.0" />
-      <TextField id="ADLLecName" layoutX="581.0" layoutY="123.0" />
-      <TextField id="ADLEMPID" layoutX="581.0" layoutY="191.0" />
-      <ChoiceBox id="ADLFaculty" layoutX="580.0" layoutY="250.0" prefWidth="150.0" />
-      <ChoiceBox id="ADLDepartment" layoutX="581.0" layoutY="305.0" prefWidth="150.0" />
-      <ChoiceBox id="ADLCenter" layoutX="580.0" layoutY="356.0" prefWidth="150.0" />
-      <ChoiceBox id="ADLBuilding" layoutX="580.0" layoutY="406.0" prefWidth="150.0" />
-      <ChoiceBox id="ADLLevel" layoutX="581.0" layoutY="461.0" prefWidth="150.0" />
-      <TextField id="ADLRank" layoutX="581.0" layoutY="518.0" />
-      <Button id="ADLGenaralRank" layoutX="550.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #d4e983;" text="Genaral Rank" />
-      <Button id="ADLClear" layoutX="722.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
-      <Button id="ADLSave" layoutX="893.0" layoutY="615.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #5c9a48;" text="Save" />
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <Button id="ADLGenaralRank" layoutX="519.0" layoutY="721.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #268104;" text="Genaral Rank" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button id="ADLClear" fx:id="btnClear" layoutX="690.0" layoutY="651.0" mnemonicParsing="false" onAction="#btnClear_OnAction" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #980606;" text="Clear" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button id="ADLSave" fx:id="btnSave" layoutX="519.0" layoutY="651.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Save" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="118.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
 
          <image>
             <Image url="@../assert/home-icon.png" />
          </image></ImageView>
-      <ImageView fx:id="iconStudent" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="227.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconStudent" fitHeight="109.0" fitWidth="125.0" layoutX="118.0" layoutY="259.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image></ImageView>
-      <ImageView fx:id="iconLocation" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="387.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconLocation" fitHeight="109.0" fitWidth="125.0" layoutX="118.0" layoutY="419.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="iconTimeTable" fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="542.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconTimeTable" fitHeight="109.0" fitWidth="125.0" layoutX="118.0" layoutY="574.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimatio" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
+      <JFXComboBox fx:id="buildingCombo" layoutX="505.0" layoutY="464.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXComboBox fx:id="centerCombo" layoutX="505.0" layoutY="399.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXComboBox fx:id="departmentCombo" layoutX="505.0" layoutY="332.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXComboBox fx:id="facultyCombo" layoutX="505.0" layoutY="274.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXComboBox fx:id="levelCombo" layoutX="505.0" layoutY="522.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXTextField fx:id="rankTxt" layoutX="505.0" layoutY="588.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXTextField fx:id="empIdTxt" layoutX="505.0" layoutY="205.0" prefHeight="31.0" prefWidth="253.0" />
+      <JFXTextField fx:id="nameTxt" layoutX="505.0" layoutY="136.0" prefHeight="31.0" prefWidth="253.0" />
    </children>
 </AnchorPane>

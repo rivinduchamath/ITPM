@@ -44,12 +44,12 @@ public class DBConnection {
             String password=DEPCrypt.decode(properties.getProperty("stdManagement.password"),"123");
             this.password="1234";
             String db=properties.getProperty("stdManagement.db");
-            this.db="www";
+
             connection = DriverManager.getConnection("jdbc:mysql://"+ip+":"+port+"/"+db+"?createDatabaseIfNotExist=true&allowMultiQueries=true", "root", "1234");
             PreparedStatement pstm = connection.prepareStatement("SHOW TABLES");
             ResultSet resultSet = pstm.executeQuery();
             if (!resultSet.next()){
-                File dbScriptFile = new File("student.sql");
+                File dbScriptFile = new File("timeTable.sql");
                 if(!dbScriptFile.exists()){
                     new Alert(Alert.AlertType.INFORMATION,"Cannot Find backup File");
                     throw  new RuntimeException("Unable to find file");

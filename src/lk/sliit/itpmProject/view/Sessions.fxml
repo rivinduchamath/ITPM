@@ -15,14 +15,14 @@
 
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.SessionsController">
    <children>
-      <Label layoutX="81.0" layoutY="53.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Sessions and Not Avilable Time Allocations">
+      <Label layoutX="94.0" layoutY="50.0" prefHeight="54.0" prefWidth="780.0" style="-fx-font: green;" text="Sessions and Not Avilable Time Allocations" textFill="#8338ab">
          <font>
-            <Font name="Arial" size="40.0" />
+            <Font name="Arial" size="36.0" />
          </font>
       </Label>
       <JFXTabPane layoutX="205.0" layoutY="145.0" minWidth="-Infinity" prefHeight="608.0" prefWidth="951.0" style="-fx-background-color: white;">
          <tabs>
-            <Tab style="-fx-background-color: green;" styleClass="common" text="Consecutive">
+            <Tab style="-fx-background-color: #757575;" styleClass="common" text="Consecutive">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -38,12 +38,12 @@
                               <TableColumn prefWidth="114.0" text="Tag" />
                           </columns>
                         </TableView>
-                        <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Add Sessions">
+                        <JFXButton layoutX="292.0" layoutY="458.0" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #064E98;" text="Add Sessions" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="475.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: orange;" text="View">
+                        <JFXButton layoutX="475.0" layoutY="458.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #268104;" text="View" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
@@ -52,17 +52,17 @@
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab style="-fx-background-color: green;" text="Parallel">
+            <Tab style="-fx-background-color: #757575;" text="Parallel">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f1f3f3;" />
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: #757575;" text="Non Overlapping">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
-            <Tab style="-fx-background-color: green;" text="Non Overlapping">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-              </content>
-            </Tab>
-            <Tab style="-fx-background-color: green;" text="Not Avilable Times">
+            <Tab style="-fx-background-color: #757575;" text="Not Avilable Times">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1034.0" style="-fx-background-color: white;">
                      <children>
@@ -101,17 +101,17 @@
                            </font>
                         </Label>
                         <JFXTextField layoutX="627.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
-                        <JFXButton layoutX="615.0" layoutY="246.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: #2874A6;" text="Submit" textFill="WHITE">
+                        <JFXButton layoutX="615.0" layoutY="246.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: #064E98;" text="Submit" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="17.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="614.0" layoutY="317.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #1E8449;" text="View" textFill="WHITE">
+                        <JFXButton layoutX="614.0" layoutY="317.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #268104;" text="View" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton layoutX="777.0" layoutY="316.0" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #B03A2E;" text="Clear" textFill="WHITE">
+                        <JFXButton layoutX="777.0" layoutY="316.0" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #980606;" text="Clear" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -137,7 +137,7 @@
        </ImageView>
        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
            <image>
-               <Image url="@../assert/open7days-icon.jpg" />
+               <Image url="@../assert/timetable.png" />
            </image>
        </ImageView>
        <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
