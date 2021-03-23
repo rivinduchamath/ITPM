@@ -21,6 +21,7 @@ import lk.sliit.itpmProject.dto.AddWorkingDaysAndHoursDTO;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class AddWorkingDaysAndHoursController implements Initializable {
@@ -89,6 +90,22 @@ public class AddWorkingDaysAndHoursController implements Initializable {
         noOfWorkSpinner.setEditable(false);
         hoursSpinner.setEditable(false);
         minutesSpinner.setEditable(false);
+
+        try {
+            int i = 0;
+            List<AddWorkingDaysAndHoursDTO> workingDaysAndHoursDTOS = workingDaysAndHoursBO.findAllWorkingDays();
+            for (AddWorkingDaysAndHoursDTO c : workingDaysAndHoursDTOS) {
+                i++;
+            }
+            if (i == 0) {
+                btnSave.setText("Save");
+            } else {
+                btnSave.setText("Update");
+            }
+        } catch (Exception e) {
+
+        }
+
     }
 
     @FXML
@@ -152,51 +169,83 @@ public class AddWorkingDaysAndHoursController implements Initializable {
 
     public void btnSave_OnAction(ActionEvent event) throws Exception {
         int i = 0;
-        boolean sunday =false, monday=false, tuesday=false, wednesday=false, thursday=false, friday=false, saturday=false;
+        boolean sunday = false, monday = false, tuesday = false, wednesday = false, thursday = false, friday = false, saturday = false;
 
-        if (mondayCB.selectedProperty().getValue()){ monday = true;
-        i++;}
-        if (tuesdayCB.selectedProperty().getValue()) {tuesday = true;
-        i++;}
-        if (wednesdayCB.selectedProperty().getValue()) {wednesday = true;
-        i++;}
-        if (thursdayCB.selectedProperty().getValue()) {thursday = true;
-        i++;}
-        if (fridayCB.selectedProperty().getValue()) {friday = true;
-        i++;}
-        if (saturdayCB.selectedProperty().getValue()) {saturday = true;
-        i++;}
-        if (sundayCB.selectedProperty().getValue()){ sunday = true;
-        i++;}
+        if (mondayCB.selectedProperty().getValue()) {
+            monday = true;
+            i++;
+        }
+        if (tuesdayCB.selectedProperty().getValue()) {
+            tuesday = true;
+            i++;
+        }
+        if (wednesdayCB.selectedProperty().getValue()) {
+            wednesday = true;
+            i++;
+        }
+        if (thursdayCB.selectedProperty().getValue()) {
+            thursday = true;
+            i++;
+        }
+        if (fridayCB.selectedProperty().getValue()) {
+            friday = true;
+            i++;
+        }
+        if (saturdayCB.selectedProperty().getValue()) {
+            saturday = true;
+            i++;
+        }
+        if (sundayCB.selectedProperty().getValue()) {
+            sunday = true;
+            i++;
+        }
 
         int noOfWorkingDays = this.noOfWorkSpinner.getValue();
         int hours = this.hoursSpinner.getValue();
         int minutes = this.minutesSpinner.getValue();
 
         if (i == 0) new Alert(Alert.AlertType.ERROR, "Please Select at Least One Day").show();
-        else if (i != noOfWorkingDays) new Alert(Alert.AlertType.ERROR, "Selected Days Count Is Not Match With No Of Days").show();
+        else if (i != noOfWorkingDays)
+            new Alert(Alert.AlertType.ERROR, "Selected Days Count Is Not Match With No Of Days").show();
+        else {
 
+            if (btnSave.getText().equals("Save")) {
+                AddWorkingDaysAndHoursDTO andHoursDTO = new AddWorkingDaysAndHoursDTO(
+                        1,
+                        noOfWorkingDays,
+                        sunday,
+                        monday,
+                        tuesday,
+                        wednesday,
+                        thursday,
+                        friday,
+                        saturday,
+                        hours,
+                        minutes
+                );
+                try {
+                    workingDaysAndHoursBO.saveWorkingDaysAndHours(andHoursDTO);
+                    new Alert(Alert.AlertType.ERROR, "User Added Successfully").show();
+                    btnSave.setText("Update");
+                } catch (Exception e) {
 
-        if (btnSave.getText().equals("Save")) {
-            AddWorkingDaysAndHoursDTO andHoursDTO = new AddWorkingDaysAndHoursDTO(
-                    1,
-                    noOfWorkingDays,
-                    sunday,
-                    monday,
-                    tuesday,
-                    wednesday,
-                    thursday,
-                    friday,
-                    saturday,
-                    hours,
-                    minutes
-            );
-            try {
-                workingDaysAndHoursBO.saveWorkingDaysAndHours(andHoursDTO);
-            }catch (Exception e){
-                new Alert(Alert.AlertType.ERROR, "User Already Added").show();
+                }
+
+            } else {
+                workingDaysAndHoursBO.updateWorkingDaysAndHours(new AddWorkingDaysAndHoursDTO(
+                        1,
+                        noOfWorkingDays,
+                        sunday,
+                        monday,
+                        tuesday,
+                        wednesday,
+                        thursday,
+                        friday,
+                        saturday,
+                        hours,
+                        minutes));
+                new Alert(Alert.AlertType.ERROR, "User Updated Successfully").show();
             }
-
         }
     }
 }

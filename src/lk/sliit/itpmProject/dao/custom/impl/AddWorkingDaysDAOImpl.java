@@ -51,7 +51,21 @@ public class AddWorkingDaysDAOImpl implements AddWorkingDaysDAO {
 
     @Override
     public boolean update(AddWorkingDaysAndHours entity) throws Exception {
-        return false;
+        return CrudUtil.execute("UPDATE WorkingDays SET  noOfDays=?,sunday=?," +
+                "monday=?,tuesday=?,wednesday =?," +
+                "thursday=?,friday=?,saturday =?," +
+                "workingTimeHours=?,workingTimeMinutes =?" +
+                " WHERE id=?", entity.getNoOfWorkingDays(), entity.isSunday(),
+                entity.isMonday(),
+                entity.isTuesday(),
+                entity.isWednesday(),
+                entity.isThursday(),
+                entity.isFriday(),
+                entity.isSaturday(),
+                entity.getHours(),
+                entity.getMinutes(),
+                entity.getId()
+        );
     }
 
     @Override
