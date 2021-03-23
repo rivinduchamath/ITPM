@@ -8,51 +8,91 @@
 
 <AnchorPane fx:id="root" prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.MainFormController">
    <children>
-      <ImageView fx:id="iconStudent" fitHeight="143.0" fitWidth="146.0" layoutX="205.0" layoutY="419.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconStudent" fitHeight="150.0" fitWidth="150.0" layoutX="211.0" layoutY="369.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="iconMap" fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconMap" fitHeight="157.0" fitWidth="144.0" layoutX="739.0" layoutY="369.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="949.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="161.0" layoutX="467.0" layoutY="416.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+      <ImageView fx:id="iconLecture" fitHeight="150.0" fitWidth="150.0" layoutX="482.0" layoutY="365.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="iconTimeTable" fitHeight="150.0" fitWidth="200.0" layoutX="982.0" layoutY="415.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconTimeTable" fitHeight="144.0" fitWidth="150.0" layoutX="989.0" layoutY="369.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
-      <Label layoutX="425.0" layoutY="183.0" prefHeight="73.0" prefWidth="467.0" text="TIME TABLE MANAGEMENT SYSTEM" textFill="#8338ab">
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="364.0" layoutY="637.0" prefHeight="46.0" prefWidth="584.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
          <font>
-            <Font name="System Bold" size="25.0" />
+            <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="473.0" layoutY="91.0" prefHeight="73.0" prefWidth="371.0" text="ABC INSTITUTE" textFill="#8338ab">
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="367.0" layoutY="683.0" prefHeight="32.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
          <font>
-            <Font name="System Bold" size="48.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="lblMenu" alignment="CENTER" layoutX="367.0" layoutY="677.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+      <Label fx:id="pgb" alignment="CENTER" layoutX="367.0" layoutY="722.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2021 SLIIT - ITPM">
          <font>
-            <Font name="DejaVu Sans Mono Bold" size="22.0" />
+            <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Label fx:id="lblDescription" alignment="CENTER" layoutX="370.0" layoutY="707.0" prefHeight="32.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="pgb" alignment="CENTER" layoutX="367.0" layoutY="749.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2021 SLIIT - ITPM">
-         <font>
-            <Font size="10.0" />
-         </font>
-      </Label>
+      <ImageView fitHeight="54.0" fitWidth="184.0" layoutX="516.0" layoutY="136.0">
+         <image>
+            <Image url="@../assert/2a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="87.0" layoutX="713.0" layoutY="186.0">
+         <image>
+            <Image url="@../assert/7a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="200.0" layoutX="559.0" layoutY="58.0">
+         <image>
+            <Image url="@../assert/1a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="77.0" layoutX="826.0" layoutY="185.0">
+         <image>
+            <Image url="@../assert/9a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="87.0" layoutX="626.0" layoutY="186.0">
+         <image>
+            <Image url="@../assert/6a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="66.0" layoutX="778.0" layoutY="182.0">
+         <image>
+            <Image url="@../assert/8a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="66.0" layoutX="878.0" layoutY="185.0">
+         <image>
+            <Image url="@../assert/10a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="118.0" layoutX="425.0" layoutY="185.0">
+         <image>
+            <Image url="@../assert/4a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="97.0" layoutX="526.0" layoutY="185.0">
+         <image>
+            <Image url="@../assert/11a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="162.0" layoutX="670.0" layoutY="136.0">
+         <image>
+            <Image url="@../assert/3a.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

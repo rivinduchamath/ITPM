@@ -29,7 +29,7 @@
             <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblMenu" alignment="CENTER" layoutX="364.0" layoutY="637.0" prefHeight="46.0" prefWidth="584.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="364.0" layoutY="637.0" prefHeight="46.0" prefWidth="584.0" text="Welcome" textAlignment="CENTER" textFill="#047508">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
@@ -44,54 +44,54 @@
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <ImageView fitHeight="54.0" fitWidth="161.0" layoutX="663.0" layoutY="136.0">
-         <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(3).gif" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="54.0" fitWidth="184.0" layoutX="516.0" layoutY="136.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(2).gif" />
+            <Image url="@../assert/2a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="87.0" layoutX="713.0" layoutY="186.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(8).gif" />
+            <Image url="@../assert/7a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="78.0" fitWidth="200.0" layoutX="559.0" layoutY="58.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px.gif" />
+            <Image url="@../assert/1a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="77.0" layoutX="826.0" layoutY="185.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(10).gif" />
+            <Image url="@../assert/9a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="87.0" layoutX="626.0" layoutY="186.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(7).gif" />
+            <Image url="@../assert/6a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="39.0" fitWidth="66.0" layoutX="778.0" layoutY="182.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(9).gif" />
+            <Image url="@../assert/8a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="66.0" layoutX="878.0" layoutY="185.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(11).gif" />
+            <Image url="@../assert/10a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="118.0" layoutX="425.0" layoutY="185.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(5).gif" />
+            <Image url="@../assert/4a.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="32.0" fitWidth="97.0" layoutX="526.0" layoutY="185.0">
          <image>
-            <Image url="@../assert/Vanilla-1.8s-271px%20(12).gif" />
+            <Image url="@../assert/11a.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="162.0" layoutX="670.0" layoutY="136.0">
+         <image>
+            <Image url="@../assert/3a.gif" />
          </image>
       </ImageView>
    </children>
