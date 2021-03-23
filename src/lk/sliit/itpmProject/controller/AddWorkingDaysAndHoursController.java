@@ -150,24 +150,24 @@ public class AddWorkingDaysAndHoursController implements Initializable {
     }
 
 
-    public void btnSave_OnAction(ActionEvent event) {
+    public void btnSave_OnAction(ActionEvent event) throws Exception {
         int i = 0;
         boolean sunday =false, monday=false, tuesday=false, wednesday=false, thursday=false, friday=false, saturday=false;
 
-        if (mondayCB.selectedProperty().getValue()) monday = true;
-        i++;
-        if (tuesdayCB.selectedProperty().getValue()) tuesday = true;
-        i++;
-        if (wednesdayCB.selectedProperty().getValue()) wednesday = true;
-        i++;
-        if (thursdayCB.selectedProperty().getValue()) thursday = true;
-        i++;
-        if (fridayCB.selectedProperty().getValue()) friday = true;
-        i++;
-        if (saturdayCB.selectedProperty().getValue()) saturday = true;
-        i++;
-        if (sundayCB.selectedProperty().getValue()) sunday = true;
-        i++;
+        if (mondayCB.selectedProperty().getValue()){ monday = true;
+        i++;}
+        if (tuesdayCB.selectedProperty().getValue()) {tuesday = true;
+        i++;}
+        if (wednesdayCB.selectedProperty().getValue()) {wednesday = true;
+        i++;}
+        if (thursdayCB.selectedProperty().getValue()){ thursday = true;
+        i++;}
+        if (fridayCB.selectedProperty().getValue()) {friday = true;
+        i++;}
+        if (saturdayCB.selectedProperty().getValue()) {saturday = true;
+        i++;}
+        if (sundayCB.selectedProperty().getValue()){ sunday = true;
+        i++;}
 
         int d = this.noOfWorkSpinner.getValue();
         int hours = this.hoursSpinner.getValue();
@@ -179,6 +179,7 @@ public class AddWorkingDaysAndHoursController implements Initializable {
 
         if (btnSave.getText().equals("Save")) {
             AddWorkingDaysAndHoursDTO andHoursDTO = new AddWorkingDaysAndHoursDTO(
+                    1,
                     d,
                     sunday,
                     monday,

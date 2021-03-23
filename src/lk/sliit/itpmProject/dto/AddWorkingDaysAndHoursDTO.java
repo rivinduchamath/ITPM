@@ -1,12 +1,14 @@
 package lk.sliit.itpmProject.dto;
 
 public class AddWorkingDaysAndHoursDTO {
+    private int id;
     private int noOfWorkingDays;
     boolean sunday, monday,  tuesday,  wednesday,  thursday,  friday,  saturday;
     int hours;
     int minutes;
 
-    public AddWorkingDaysAndHoursDTO(int noOfWorkingDays, boolean sunday, boolean monday, boolean tuesday, boolean wednesday, boolean thursday, boolean friday, boolean saturday, int hours, int minutes) {
+    public AddWorkingDaysAndHoursDTO(int id,int noOfWorkingDays, boolean sunday, boolean monday, boolean tuesday, boolean wednesday, boolean thursday, boolean friday, boolean saturday, int hours, int minutes) {
+       this.id= id;
         this.noOfWorkingDays = noOfWorkingDays;
         this.sunday = sunday;
         this.monday = monday;
@@ -22,8 +24,18 @@ public class AddWorkingDaysAndHoursDTO {
     public AddWorkingDaysAndHoursDTO() {
     }
 
+
+
     public int getNoOfWorkingDays() {
         return noOfWorkingDays;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNoOfWorkingDays(int noOfWorkingDays) {
@@ -105,7 +117,8 @@ public class AddWorkingDaysAndHoursDTO {
     @Override
     public String toString() {
         return "AddWorkingDaysAndHoursDTO{" +
-                "noOfWorkingDays=" + noOfWorkingDays +
+                "id=" + id +
+                ", noOfWorkingDays=" + noOfWorkingDays +
                 ", sunday=" + sunday +
                 ", monday=" + monday +
                 ", tuesday=" + tuesday +

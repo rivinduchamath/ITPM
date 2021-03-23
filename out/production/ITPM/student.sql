@@ -8,7 +8,8 @@ CREATE TABLE `WorkingDays` (
                         `thursday` boolean  DEFAULT 0,
                         `friday` boolean  DEFAULT 0,
                         `saturday` boolean  DEFAULT 0,
-                        `workingTime` decimal(6,2) DEFAULT NULL,
+                        `workingTimeHours` int DEFAULT NULL,
+                        `workingTimeMinutes` int DEFAULT NULL,
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

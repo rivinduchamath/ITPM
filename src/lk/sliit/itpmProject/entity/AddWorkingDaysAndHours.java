@@ -2,12 +2,14 @@ package lk.sliit.itpmProject.entity;
 
 public class AddWorkingDaysAndHours implements SuperEntity{
 
+    private int id;
         private int noOfWorkingDays;
         boolean sunday, monday,  tuesday,  wednesday,  thursday,  friday,  saturday;
         int hours;
         int minutes;
 
-        public AddWorkingDaysAndHours(int noOfWorkingDays, boolean sunday, boolean monday, boolean tuesday, boolean wednesday, boolean thursday, boolean friday, boolean saturday, int hours, int minutes) {
+        public AddWorkingDaysAndHours(int id,int noOfWorkingDays, boolean sunday, boolean monday, boolean tuesday, boolean wednesday, boolean thursday, boolean friday, boolean saturday, int hours, int minutes) {
+           this.id=id;
             this.noOfWorkingDays = noOfWorkingDays;
             this.sunday = sunday;
             this.monday = monday;
@@ -23,7 +25,15 @@ public class AddWorkingDaysAndHours implements SuperEntity{
         public AddWorkingDaysAndHours() {
         }
 
-        public int getNoOfWorkingDays() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getNoOfWorkingDays() {
             return noOfWorkingDays;
         }
 
