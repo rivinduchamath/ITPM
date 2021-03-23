@@ -169,18 +169,18 @@ public class AddWorkingDaysAndHoursController implements Initializable {
         if (sundayCB.selectedProperty().getValue()){ sunday = true;
         i++;}
 
-        int d = this.noOfWorkSpinner.getValue();
+        int noOfWorkingDays = this.noOfWorkSpinner.getValue();
         int hours = this.hoursSpinner.getValue();
         int minutes = this.minutesSpinner.getValue();
 
         if (i == 0) new Alert(Alert.AlertType.ERROR, "Please Select at Least One Day").show();
-        else if (i != d) new Alert(Alert.AlertType.ERROR, "Selected Days Count Is Not Match With No Of Days").show();
+        else if (i != noOfWorkingDays) new Alert(Alert.AlertType.ERROR, "Selected Days Count Is Not Match With No Of Days").show();
 
 
         if (btnSave.getText().equals("Save")) {
             AddWorkingDaysAndHoursDTO andHoursDTO = new AddWorkingDaysAndHoursDTO(
                     1,
-                    d,
+                    noOfWorkingDays,
                     sunday,
                     monday,
                     tuesday,
@@ -191,8 +191,30 @@ public class AddWorkingDaysAndHoursController implements Initializable {
                     hours,
                     minutes
             );
-            workingDaysAndHoursBO.saveWorkingDaysAndHours(andHoursDTO);
+            try {
+                workingDaysAndHoursBO.saveWorkingDaysAndHours(andHoursDTO);
+            }catch (Exception e){
+                new Alert(Alert.AlertType.ERROR, "User Already Added").show();
+            }
+
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -14,7 +14,7 @@ CREATE TABLE `WorkingDays` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-
+/*
 
 
 
@@ -55,4 +55,4 @@ CREATE TABLE `OrderDetail` (
   CONSTRAINT `OrderDetail_ibfk_2` FOREIGN KEY (`itemCode`) REFERENCES `Item` (`code`),
   CONSTRAINT `OrderDetail_ibfk_3` FOREIGN KEY (`orderId`) REFERENCES `Order` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+*/

@@ -17,24 +17,6 @@ public class CrudUtil {
             return (T) pstm.executeQuery();
         }
         return (T)((Boolean) (pstm.executeUpdate() > 0));
-    }
-    /*
-    public ResultSet executeQuery(String sql, Object... params) throws Exception {
-        Connection connection = DBConnection.getInstance().getConnection();
-        PreparedStatement pstm = connection.prepareStatement(sql);
-        for (int i = 0; i < params.length; i++) {
-            pstm.setObject((i + 1), params[i]);
-        }
-        return pstm.executeQuery();
-    }
 
-    public boolean executeUpdate(String sql, Object... params)throws Exception{
-        Connection connection = DBConnection.getInstance().getConnection();
-        PreparedStatement pstm = connection.prepareStatement(sql);
-        for (int i = 0; i < params.length; i++) {
-            pstm.setObject((i + 1), params[i]);
-        }
-        return pstm.executeUpdate() > 0;
     }
-*/
 }

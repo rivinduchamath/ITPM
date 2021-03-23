@@ -49,7 +49,7 @@ public class DBConnection {
             PreparedStatement pstm = connection.prepareStatement("SHOW TABLES");
             ResultSet resultSet = pstm.executeQuery();
             if (!resultSet.next()){
-                File dbScriptFile = new File("student.sql");
+                File dbScriptFile = new File("timeTable.sql");
                 if(!dbScriptFile.exists()){
                     new Alert(Alert.AlertType.INFORMATION,"Cannot Find backup File");
                     throw  new RuntimeException("Unable to find file");
