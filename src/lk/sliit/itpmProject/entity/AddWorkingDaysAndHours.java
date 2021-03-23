@@ -1,6 +1,6 @@
 package lk.sliit.itpmProject.entity;
 
-public class AddWorkingDaysAndHours {
+public class AddWorkingDaysAndHours implements SuperEntity{
 
         private int noOfWorkingDays;
         boolean sunday, monday,  tuesday,  wednesday,  thursday,  friday,  saturday;
