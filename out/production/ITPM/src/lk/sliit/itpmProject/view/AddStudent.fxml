@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,46 +23,42 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="346.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID :">
+      <Text layoutX="811.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="774.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group ID :">
+      <Text layoutX="779.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group ID :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <TextField id="txtGroupId" layoutX="457.0" layoutY="355.0" prefHeight="31.0" prefWidth="209.0" />
-      <TextField id="txtSubGroupId" layoutX="948.0" layoutY="194.0" prefHeight="31.0" prefWidth="202.0" />
-      <Button id="btnGenerate" graphicTextGap="6.0" layoutX="948.0" layoutY="352.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Button id="btnGenerate" graphicTextGap="6.0" layoutX="945.0" layoutY="336.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnGenerateId_OnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-      <TextField id="txtAcaYearSem" layoutX="465.0" layoutY="194.0" prefHeight="31.0" prefWidth="202.0" />
       <Text layoutX="332.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme :" wrappingWidth="209.046875">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <ChoiceBox id="cbProgramme" layoutX="465.0" layoutY="270.0" prefHeight="31.0" prefWidth="202.0" />
-      <Text layoutX="292.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Number :">
+      <Text layoutX="303.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Number :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="715.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group Number  :">
+      <Text layoutX="256.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group Number  :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Spinner id="spGroupNo" layoutX="457.0" layoutY="443.0" prefHeight="31.0" prefWidth="202.0" />
-      <Spinner id="spSubGroupNo" layoutX="948.0" layoutY="268.0" prefHeight="31.0" prefWidth="202.0" />
-      <Button id="btnSave" graphicTextGap="6.0" layoutX="456.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Spinner id="spGroupNo" fx:id="subGroupNumberSpinner" layoutX="478.0" layoutY="447.0" prefHeight="31.0" prefWidth="209.0" />
+      <Spinner id="spSubGroupNo" fx:id="groupNumberSpinner" layoutX="478.0" layoutY="354.0" prefHeight="31.0" prefWidth="209.0" />
+      <Button fx:id="btnSave1" graphicTextGap="6.0" layoutX="474.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnSave_OnAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-      <Button id="btnClear" graphicTextGap="6.0" layoutX="702.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Button id="btnClear" graphicTextGap="6.0" layoutX="702.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnClear" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
@@ -89,5 +85,9 @@
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
+      <JFXTextField fx:id="academicYearTxt" layoutX="474.0" layoutY="194.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXTextField fx:id="subGroupIdTxt" layoutX="945.0" layoutY="268.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXTextField fx:id="groupIdTxt" layoutX="945.0" layoutY="194.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXComboBox fx:id="programmeCombo" layoutX="478.0" layoutY="269.0" prefHeight="31.0" prefWidth="209.0" />
    </children>
 </AnchorPane>

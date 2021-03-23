@@ -161,7 +161,7 @@ public class AddWorkingDaysAndHoursController implements Initializable {
 
     public void btnClear_OnAction(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
-                "Are you sure whether you want to delete this item?",
+                "Are you sure whether you want to clear?",
                 ButtonType.YES, ButtonType.NO);
         alert.showAndWait();
     }

@@ -48,7 +48,7 @@ public class AddLecturerController implements Initializable {
     private JFXComboBox<?> buildingCombo;
 
     @FXML
-    private JFXComboBox<?> centerCombo;
+    private JFXComboBox<String> centerCombo;
 
     @FXML
     private JFXComboBox<?> departmentCombo;
@@ -57,7 +57,7 @@ public class AddLecturerController implements Initializable {
     private JFXComboBox<?> facultyCombo;
 
     @FXML
-    private JFXComboBox<?> levelCombo;
+    private JFXComboBox<String> levelCombo;
 
     @FXML
     private JFXTextField rankTxt;
