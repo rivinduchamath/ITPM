@@ -160,7 +160,7 @@ public class AddWorkingDaysAndHoursController implements Initializable {
         i++;}
         if (wednesdayCB.selectedProperty().getValue()) {wednesday = true;
         i++;}
-        if (thursdayCB.selectedProperty().getValue()){ thursday = true;
+        if (thursdayCB.selectedProperty().getValue()) {thursday = true;
         i++;}
         if (fridayCB.selectedProperty().getValue()) {friday = true;
         i++;}
