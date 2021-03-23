@@ -29,7 +29,7 @@
             <Image url="@../assert/timetable.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblMenu" alignment="CENTER" layoutX="364.0" layoutY="637.0" prefHeight="46.0" prefWidth="584.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="364.0" layoutY="637.0" prefHeight="46.0" prefWidth="584.0" text="Welcome" textAlignment="CENTER" textFill="#047508">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
