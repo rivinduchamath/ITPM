@@ -57,7 +57,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <TextField id="ADLLecName" layoutX="519.0" layoutY="141.0" />
+      <TextField id="ADLLecName" fx:id="lectureNameTxt" layoutX="519.0" layoutY="141.0" />
       <TextField id="ADLEMPID" layoutX="519.0" layoutY="209.0" />
       <ChoiceBox id="ADLFaculty" layoutX="518.0" layoutY="273.0" prefHeight="31.0" prefWidth="187.0" />
       <ChoiceBox id="ADLDepartment" layoutX="517.0" layoutY="334.0" prefHeight="31.0" prefWidth="187.0" />
@@ -73,7 +73,7 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button id="ADLSave" layoutX="519.0" layoutY="651.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Save" textFill="#e8e8e8">
+      <Button id="ADLSave" layoutX="519.0" layoutY="651.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #064E98;" text="Save" textFill="#e8e8e8">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>

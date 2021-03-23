@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
@@ -126,7 +127,7 @@
                                 </JFXButton>
                                 <JFXTextField layoutX="658.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
                                 <JFXTextField layoutX="213.0" layoutY="150.0" prefHeight="31.0" prefWidth="244.0" />
-                                <JFXTextField layoutX="213.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
+                        <JFXComboBox layoutX="213.0" layoutY="262.0" prefHeight="31.0" prefWidth="248.0" />
                             </children>
                         </AnchorPane>
                     </content>

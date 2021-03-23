@@ -1,10 +1,13 @@
 package lk.sliit.itpmProject.controller;
 
 import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -15,6 +18,7 @@ import java.io.IOException;
 
 public class AddLecturerController {
 
+    public TextField lectureNameTxt;
     @FXML
     private AnchorPane root1;
     @FXML
@@ -79,4 +83,11 @@ public class AddLecturerController {
 
     }
 
+    public void btnSave_OnAction(ActionEvent event) {
+        System.out.println("fffffffffffffffffffffffffffffffffffff");
+        String d = String.valueOf(lectureNameTxt.getText());
+        if (!d.matches("^[0-9]")) {
+            new Alert(Alert.AlertType.ERROR, "Invalid Name").show();
+        }
+    }
 }
