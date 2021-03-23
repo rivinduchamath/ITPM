@@ -11,7 +11,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane id="MLCenter" prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageLecturersController">
 
    <children>
@@ -29,9 +28,9 @@
             <TableColumn prefWidth="72.0" text="Level" />
         </columns>
       </TableView>
-      <Button id="MLUpdate" layoutX="783.0" layoutY="173.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #34c0eb;" text="Update" />
-      <Button id="MLDelete" layoutX="785.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #FF0000;" text="Delete" />
-      <Button id="MLClear" layoutX="785.0" layoutY="292.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="Clear" />
+      <Button id="MLUpdate" layoutX="783.0" layoutY="173.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #3a97f8;" text="Update" />
+      <Button id="MLDelete" layoutX="785.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #c4566e;" text="Delete" />
+      <Button id="MLClear" layoutX="785.0" layoutY="292.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #00b4b5;" text="Clear" />
       <Text layoutX="313.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Name">
          <font>
             <Font size="20.0" />

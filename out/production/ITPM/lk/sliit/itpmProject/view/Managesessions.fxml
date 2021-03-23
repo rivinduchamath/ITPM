@@ -5,12 +5,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManagesessionsController">
    <children>
       <Text layoutX="229.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Sessions">
@@ -32,11 +32,11 @@
         </columns>
       </TableView>
       <TextField id="btnsearchMS" layoutX="732.0" layoutY="110.0" prefHeight="32.0" prefWidth="167.0" style="-fx-background-color: #00b33c;" />
-      <Button id="btnaddsessionMS" layoutX="1110.0" layoutY="77.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="167.0" style="-fx-background-color: #00cc00;" text="Add Session" />
-      <Button id="btnrefreshMS" layoutX="1121.0" layoutY="163.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #ff9900;" text="Refresh" />
+      <Button id="btnaddsessionMS" layoutX="1110.0" layoutY="77.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="167.0" style="-fx-background-color: #7fa9f5;" text="Add Session" />
+      <Button id="btnrefreshMS" layoutX="1121.0" layoutY="163.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #82bbe8;" text="Refresh" />
       <Button id="btnviewMS" layoutX="1121.0" layoutY="264.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #71eb34;" text="View" />
-      <Button id="btnupdateMS" layoutX="1121.0" layoutY="335.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #09F0F0;" text="Update" />
-      <Button id="btndeleteMS" layoutX="1121.0" layoutY="402.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #FF0000;" text="Delete" />
+      <Button id="btnupdateMS" layoutX="1121.0" layoutY="335.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #3a97f8;" text="Update" />
+      <Button id="btndeleteMS" layoutX="1121.0" layoutY="402.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #c4566e;" text="Delete" />
       <Text fill="#fff9f9" layoutX="786.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
          <font>
             <Font size="20.0" />
