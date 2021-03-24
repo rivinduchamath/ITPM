@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
@@ -90,7 +91,7 @@
                             <children>
                                 <Label layoutX="33.0" layoutY="42.0" prefHeight="21.0" prefWidth="360.0" text="Lectures, Groups and Sub Groups">
                                     <font>
-                                        <Font size="20.0" />
+                                        <Font name="System Bold" size="21.0" />
                                     </font>
                                 </Label>
                                 <Label layoutX="75.0" layoutY="152.0" prefHeight="27.0" prefWidth="111.0" text="Select Room">
@@ -114,19 +115,19 @@
                                     </font>
                                 </Label>
                                 <JFXTextField layoutX="658.0" layoutY="148.0" prefHeight="31.0" prefWidth="244.0" />
-                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #a1e356;" text="Add Session">
+                                <JFXButton layoutX="221.0" layoutY="420.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #064E98;" text="Add Session" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="17.0" />
                                     </font>
                                 </JFXButton>
-                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #00b4b5;" text="Clear">
+                                <JFXButton layoutX="529.0" layoutY="421.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #980606;" text="Clear" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="16.0" />
                                     </font>
                                 </JFXButton>
                                 <JFXTextField layoutX="658.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
                                 <JFXTextField layoutX="213.0" layoutY="150.0" prefHeight="31.0" prefWidth="244.0" />
-                                <JFXTextField layoutX="213.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" />
+                        <JFXComboBox layoutX="213.0" layoutY="262.0" prefHeight="31.0" prefWidth="248.0" />
                             </children>
                         </AnchorPane>
                     </content>

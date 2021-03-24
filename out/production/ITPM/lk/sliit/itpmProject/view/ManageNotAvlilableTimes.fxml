@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="865.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageNotAvailableTimesController">
+<AnchorPane prefHeight="865.0" prefWidth="1310.0" style="-fx-background-color: #f1f3f3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sliit.itpmProject.controller.ManageNotAvailableTimesController">
    <children>
-      <Label layoutX="117.0" layoutY="80.0" text="Manage Not Available Times">
+      <Label layoutX="150.0" layoutY="84.0" text="Manage Not Available Times" textFill="#8338ab">
          <font>
-            <Font name="System Bold" size="41.0" />
+            <Font size="36.0" />
          </font>
       </Label>
-      <TableView layoutX="291.0" layoutY="285.0" prefHeight="369.0" prefWidth="802.0">
+      <TableView layoutX="271.0" layoutY="216.0" prefHeight="369.0" prefWidth="802.0">
         <columns>
           <TableColumn prefWidth="90.0" text="ID" />
           <TableColumn prefWidth="167.0" text="Duration" />
@@ -25,40 +25,40 @@
             <TableColumn prefWidth="178.0" text="Sub-Group ID" />
         </columns>
       </TableView>
-      <JFXButton layoutX="1130.0" layoutY="326.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: Green;" text="Refresh" textFill="WHITE">
+      <JFXButton layoutX="1101.0" layoutY="278.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #064E98;" text="Refresh" textFill="WHITE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="1130.0" layoutY="391.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: blue;" text="Back" textFill="#eeeeee">
+      <JFXButton layoutX="1101.0" layoutY="424.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #649292;" text="Back" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="1130.0" layoutY="449.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: red;" text="Delete">
+      <JFXButton layoutX="1101.0" layoutY="346.0" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #980606;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="95.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/home-icon.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="95.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/lecture-1-300x300.png" />
          </image></ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="95.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="95.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/open7days-icon.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="39.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="109.0" fitWidth="125.0" layoutX="95.0" layoutY="695.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assert/google-maps-location-icon-14.jpg" />
          </image>

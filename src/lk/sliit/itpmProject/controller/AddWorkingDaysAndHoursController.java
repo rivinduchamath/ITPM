@@ -2,21 +2,29 @@ package lk.sliit.itpmProject.controller;
 
 import com.jfoenix.controls.JFXCheckBox;
 import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Spinner;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import lk.sliit.itpmProject.business.BOFactory;
+import lk.sliit.itpmProject.business.BOTypes;
+import lk.sliit.itpmProject.business.custom.AddWorkingDaysAndHoursBO;
+import lk.sliit.itpmProject.dto.AddWorkingDaysAndHoursDTO;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class AddWorkingDaysAndHoursController {
+public class AddWorkingDaysAndHoursController implements Initializable {
     @FXML
     private Button btnSave;
 
@@ -24,7 +32,7 @@ public class AddWorkingDaysAndHoursController {
     private Button btnClear;
 
     @FXML
-    private Spinner<?> noOfWorkTxt;
+    private Spinner<Integer> noOfWorkSpinner;
 
     @FXML
     private JFXCheckBox thursdayCB;
@@ -50,10 +58,10 @@ public class AddWorkingDaysAndHoursController {
     @FXML
     private AnchorPane root1;
     @FXML
-    private Spinner<?> minutesTxt;
+    private Spinner<Integer> hoursSpinner;
 
     @FXML
-    private Spinner<?> hoursTxt;
+    private Spinner<Integer> minutesSpinner;
 
     @FXML
     private ImageView iconHome;
@@ -66,6 +74,39 @@ public class AddWorkingDaysAndHoursController {
 
     @FXML
     private ImageView iconLocation;
+
+
+    private final AddWorkingDaysAndHoursBO workingDaysAndHoursBO = BOFactory.getInstance().getBO(BOTypes.AddWorkingDays);
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        SpinnerValueFactory<Integer> spinnerValueFactory1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 7, 5);
+        SpinnerValueFactory<Integer> spinnerValueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 24, 8);
+        SpinnerValueFactory<Integer> spinnerValueFactory3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 60, 30);
+        this.noOfWorkSpinner.setValueFactory(spinnerValueFactory1);
+        this.hoursSpinner.setValueFactory(spinnerValueFactory2);
+        this.minutesSpinner.setValueFactory(spinnerValueFactory3);
+        noOfWorkSpinner.setEditable(false);
+        hoursSpinner.setEditable(false);
+        minutesSpinner.setEditable(false);
+
+        try {
+            int i = 0;
+            List<AddWorkingDaysAndHoursDTO> workingDaysAndHoursDTOS = workingDaysAndHoursBO.findAllWorkingDays();
+            for (AddWorkingDaysAndHoursDTO c : workingDaysAndHoursDTOS) {
+                i++;
+            }
+            if (i == 0) {
+                btnSave.setText("Save");
+            } else {
+                btnSave.setText("Update");
+            }
+        } catch (Exception e) {
+
+        }
+
+    }
 
     @FXML
     void navigate(MouseEvent event) throws IOException {
@@ -116,4 +157,113 @@ public class AddWorkingDaysAndHoursController {
     void playMouseExitAnimatio(MouseEvent event) {
 
     }
+
+
+    public void btnClear_OnAction(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                "Are you sure whether you want to clear?",
+                ButtonType.YES, ButtonType.NO);
+        alert.showAndWait();
+    }
+
+
+    public void btnSave_OnAction(ActionEvent event) throws Exception {
+        int i = 0;
+        boolean sunday = false, monday = false, tuesday = false, wednesday = false, thursday = false, friday = false, saturday = false;
+
+        if (mondayCB.selectedProperty().getValue()) {
+            monday = true;
+            i++;
+        }
+        if (tuesdayCB.selectedProperty().getValue()) {
+            tuesday = true;
+            i++;
+        }
+        if (wednesdayCB.selectedProperty().getValue()) {
+            wednesday = true;
+            i++;
+        }
+        if (thursdayCB.selectedProperty().getValue()) {
+            thursday = true;
+            i++;
+        }
+        if (fridayCB.selectedProperty().getValue()) {
+            friday = true;
+            i++;
+        }
+        if (saturdayCB.selectedProperty().getValue()) {
+            saturday = true;
+            i++;
+        }
+        if (sundayCB.selectedProperty().getValue()) {
+            sunday = true;
+            i++;
+        }
+
+        int noOfWorkingDays = this.noOfWorkSpinner.getValue();
+        int hours = this.hoursSpinner.getValue();
+        int minutes = this.minutesSpinner.getValue();
+
+        if (i == 0) new Alert(Alert.AlertType.ERROR, "Please Select at Least One Day").show();
+        else if (i != noOfWorkingDays)
+            new Alert(Alert.AlertType.ERROR, "Selected Days Count Is Not Match With No Of Days").show();
+        else {
+
+            if (btnSave.getText().equals("Save")) {
+                AddWorkingDaysAndHoursDTO andHoursDTO = new AddWorkingDaysAndHoursDTO(
+                        1,
+                        noOfWorkingDays,
+                        sunday,
+                        monday,
+                        tuesday,
+                        wednesday,
+                        thursday,
+                        friday,
+                        saturday,
+                        hours,
+                        minutes
+                );
+                try {
+                    workingDaysAndHoursBO.saveWorkingDaysAndHours(andHoursDTO);
+                    new Alert(Alert.AlertType.ERROR, "User Added Successfully").show();
+                    btnSave.setText("Update");
+                } catch (Exception e) {
+
+                }
+
+            } else {
+                workingDaysAndHoursBO.updateWorkingDaysAndHours(new AddWorkingDaysAndHoursDTO(
+                        1,
+                        noOfWorkingDays,
+                        sunday,
+                        monday,
+                        tuesday,
+                        wednesday,
+                        thursday,
+                        friday,
+                        saturday,
+                        hours,
+                        minutes));
+                new Alert(Alert.AlertType.ERROR, "User Updated Successfully").show();
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
