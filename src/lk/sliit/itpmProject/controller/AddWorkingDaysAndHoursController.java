@@ -75,7 +75,6 @@ public class AddWorkingDaysAndHoursController implements Initializable {
     @FXML
     private ImageView iconLocation;
 
-
     private final AddWorkingDaysAndHoursBO workingDaysAndHoursBO = BOFactory.getInstance().getBO(BOTypes.AddWorkingDays);
 
     @Override

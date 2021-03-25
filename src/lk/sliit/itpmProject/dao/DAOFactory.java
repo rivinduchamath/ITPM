@@ -19,6 +19,8 @@ public class DAOFactory {
         switch (daoTypes){
             case AddWorkingDaysDAO:
                 return (T) new AddWorkingDaysDAOImpl();
+            case AddStudent:
+                return (T) new AddWorkingDaysDAOImpl();
 
 
             default:
