@@ -13,7 +13,17 @@ CREATE TABLE `WorkingDays` (
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
+CREATE TABLE `AddLecturer` (
+                               `id` varchar(10) NOT NULL,
+                               `lName` varchar(30) NOT NULL,
+                               `department` varchar(10)  NOT NULL ,
+                               `faculty` varchar(10) NOT NULL ,
+                               `center` varchar(10) NOT NULL ,
+                               `buildingNO` varchar(10) NOT NULL ,
+                               `level` varchar(10) NOT NULL ,
+                               `rank` varchar(10) NOT NULL ,
+                               PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*
 
 
