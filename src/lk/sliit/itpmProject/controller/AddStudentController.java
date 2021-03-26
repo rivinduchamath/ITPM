@@ -33,7 +33,7 @@ import java.util.ResourceBundle;
 public class AddStudentController implements Initializable {
 
     @FXML
-    public Button btnSave1;
+    public Button btnAddSave;
 
     @FXML
     private AnchorPane root;
@@ -97,7 +97,7 @@ public class AddStudentController implements Initializable {
         list1.add("CSSE");
         list1.add("CSE");
         list1.add("IM");
-        btnSave1.setDisable(true);
+        btnAddSave.setDisable(true);
     }
 
     @FXML
@@ -155,7 +155,7 @@ public class AddStudentController implements Initializable {
 
         String groupId = groupIdTxt.getText();
         String subGroup = subGroupIdTxt.getText();
-        btnSave1.setDisable(false);
+        btnAddSave.setDisable(false);
 
     }
 

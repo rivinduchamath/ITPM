@@ -1,6 +1,7 @@
 package lk.sliit.itpmProject.dao;
 
 
+import lk.sliit.itpmProject.dao.custom.impl.AddStudentDAOImpl;
 import lk.sliit.itpmProject.dao.custom.impl.AddWorkingDaysDAOImpl;
 
 public class DAOFactory {
@@ -20,7 +21,7 @@ public class DAOFactory {
             case AddWorkingDaysDAO:
                 return (T) new AddWorkingDaysDAOImpl();
             case AddStudent:
-                return (T) new AddWorkingDaysDAOImpl();
+                return (T) new AddStudentDAOImpl();
 
 
             default:
