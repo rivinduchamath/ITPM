@@ -33,7 +33,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button id="btnAddGenerate" graphicTextGap="6.0" layoutX="1172.0" layoutY="466.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnGenerateId_OnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Button id="btnAddGenerate" graphicTextGap="6.0" layoutX="1172.0" layoutY="466.0" mnemonicParsing="false" onAction="#btnGenerateId_OnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
