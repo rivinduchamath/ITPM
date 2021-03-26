@@ -181,7 +181,7 @@ public class AddStudentController implements Initializable {
         );
         try {
             addStudentBO.saveStudent(andHoursDTO);
-            new Alert(Alert.AlertType.ERROR, "User Added Successfully").show();
+            new Alert(Alert.AlertType.NONE, "User Added Successfully").show();
         } catch (Exception e) {
             System.out.println(e);
             System.out.println("222222222222222222222222222222222222222");
