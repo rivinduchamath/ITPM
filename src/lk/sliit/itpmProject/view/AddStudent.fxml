@@ -18,49 +18,47 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <Text layoutX="836.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester :" wrappingWidth="233.046875">
+      <Text layoutX="223.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Year Semester :" wrappingWidth="233.046875">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="350.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID :">
+      <Text layoutX="811.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group ID :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="741.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group ID :">
+      <Text layoutX="779.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group ID :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Button id="btnAddGenerate" graphicTextGap="6.0" layoutX="1172.0" layoutY="466.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnGenerateId_OnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Button id="btnGenerate" graphicTextGap="6.0" layoutX="945.0" layoutY="336.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnGenerateId_OnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #649292;" text="Generate IDs" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-      <Text layoutX="334.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme :" wrappingWidth="209.046875">
+      <Text layoutX="332.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme :" wrappingWidth="209.046875">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="303.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Number :">
+      <Text layoutX="303.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Number :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="741.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group Number  :">
+      <Text layoutX="256.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Group Number  :">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Spinner id="spAddGroupNo" fx:id="subGroupNumberSpinner" layoutX="971.0" layoutY="374.0" prefHeight="31.0" prefWidth="209.0" />
-      <Spinner id="spAddSubGroupNo" fx:id="groupNumberSpinner" layoutX="473.0" layoutY="373.0" prefHeight="31.0" prefWidth="209.0" />
-      <Button id="btnAddSave" fx:id="btnAddSave" graphicTextGap="6.0" layoutX="465.0" layoutY="601.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnSave_onAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Spinner id="spGroupNo" fx:id="subGroupNumberSpinner" layoutX="478.0" layoutY="447.0" prefHeight="31.0" prefWidth="209.0" />
+      <Spinner id="spSubGroupNo" fx:id="groupNumberSpinner" layoutX="478.0" layoutY="354.0" prefHeight="31.0" prefWidth="209.0" />
+      <Button fx:id="btnSave" graphicTextGap="6.0" layoutX="474.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnSave_OnAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-
-      <Button id="btnClear" graphicTextGap="6.0" layoutX="774.0" layoutY="601.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnClear" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
-
+      <Button id="btnClear" graphicTextGap="6.0" layoutX="702.0" layoutY="539.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnClear" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
@@ -87,15 +85,9 @@
             <Image url="@../assert/clipart1593805.png" />
          </image>
       </ImageView>
-      <JFXTextField id="txtAddYear" fx:id="academicYearTxt" layoutX="473.0" layoutY="215.0" prefHeight="31.0" prefWidth="209.0" />
-      <JFXTextField id="txtAddSubId" fx:id="subGroupIdTxt" layoutX="914.0" layoutY="465.0" prefHeight="31.0" prefWidth="209.0" />
-      <JFXTextField id="txtAddGroup" fx:id="groupIdTxt" layoutX="473.0" layoutY="462.0" prefHeight="31.0" prefWidth="209.0" />
-      <JFXComboBox id="cmbAddProgramme" fx:id="programmeCombo" layoutX="473.0" layoutY="293.0" prefHeight="31.0" prefWidth="708.0" />
-      <Text layoutX="395.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :" wrappingWidth="77.046875">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Text>
-      <Spinner id="spAddSem" fx:id="semesterSpinner" layoutX="970.0" layoutY="222.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXTextField fx:id="academicYearTxt" layoutX="474.0" layoutY="194.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXTextField fx:id="subGroupIdTxt" layoutX="945.0" layoutY="268.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXTextField fx:id="groupIdTxt" layoutX="945.0" layoutY="194.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXComboBox fx:id="programmeCombo" layoutX="478.0" layoutY="269.0" prefHeight="31.0" prefWidth="209.0" />
    </children>
 </AnchorPane>

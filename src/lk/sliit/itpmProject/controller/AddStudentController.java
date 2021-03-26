@@ -160,7 +160,7 @@ public class AddStudentController implements Initializable {
     }
 
     @FXML
-    void btnSave_onAction(ActionEvent event) {
+    void btnSave_OnAction(ActionEvent event) {
         int year = Integer.parseInt(academicYearTxt.getText());
         int semester = semesterSpinner.getValue();
         String programme = programmeCombo.getValue();
@@ -191,5 +191,6 @@ public class AddStudentController implements Initializable {
     public void btnClear(ActionEvent event) {
 
     }
+
 
 }
