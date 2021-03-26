@@ -13,10 +13,11 @@ CREATE TABLE `WorkingDays` (
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE 'AddStudentSubGroups'(
+CREATE TABLE `AddStudentSubGroups`(
                         `id` varchar(10) NOT NULL,
-                        `year` varchar(4) DEFAULT NULL,
-                        `semester` varchar(2)  DEFAULT NULL,
+                        `year` int DEFAULT NULL,
+                        `semester` int  DEFAULT 1,
+                        `programme` varchar(20) DEFAULT NULL,
                         `groupNo` int  DEFAULT NULL,
                         `subGroupNo` int DEFAULT NULL,
                         `groupId` int  DEFAULT NULL,
