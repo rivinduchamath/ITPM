@@ -22,9 +22,7 @@ import javafx.scene.input.MouseEvent;
 import lk.sliit.itpmProject.business.BOFactory;
 import lk.sliit.itpmProject.business.BOTypes;
 import lk.sliit.itpmProject.business.custom.AddStudentBO;
-import lk.sliit.itpmProject.business.custom.AddWorkingDaysAndHoursBO;
 import lk.sliit.itpmProject.dto.AddStudentDTO;
-import lk.sliit.itpmProject.dto.AddWorkingDaysAndHoursDTO;
 
 import java.io.IOException;
 import java.net.URL;
