@@ -21,12 +21,12 @@
          <Font size="20.0" />
       </font>
    </Text>
-   <TextField id="txtTagName" layoutX="526.0" layoutY="233.0" prefHeight="31.0" prefWidth="396.0">
+   <TextField id="txtAddTagName" layoutX="526.0" layoutY="233.0" prefHeight="31.0" prefWidth="396.0">
       <effect>
          <Blend />
       </effect>
    </TextField>
-   <TextField id="txtTagCode" layoutX="526.0" layoutY="310.0" prefHeight="31.0" prefWidth="396.0">
+   <TextField id="txtAddTagCode" layoutX="526.0" layoutY="310.0" prefHeight="31.0" prefWidth="396.0">
       <effect>
          <Blend />
       </effect>
@@ -41,12 +41,12 @@
          <Font size="20.0" />
       </font>
    </Text>
-   <ChoiceBox id="spRelatedTag" layoutX="526.0" layoutY="389.0" prefHeight="31.0" prefWidth="396.0" />
-   <Button id="btnSave" graphicTextGap="6.0" layoutX="526.0" layoutY="472.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+   <ChoiceBox id="spAddRelatedTag" layoutX="526.0" layoutY="389.0" prefHeight="31.0" prefWidth="396.0" />
+   <Button id="btnTagSave" graphicTextGap="6.0" layoutX="526.0" layoutY="472.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
       <font>
          <Font name="System Bold" size="16.0" />
       </font></Button>
-   <Button id="btnClear" graphicTextGap="6.0" layoutX="732.0" layoutY="472.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+   <Button id="btnTagClear" graphicTextGap="6.0" layoutX="732.0" layoutY="472.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
       <font>
          <Font name="System Bold" size="17.0" />
       </font></Button>

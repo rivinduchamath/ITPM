@@ -13,6 +13,7 @@ CREATE TABLE `WorkingDays` (
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+<<<<<<< HEAD
 CREATE TABLE `AddLecturer` (
                                `id` varchar(10) NOT NULL,
                                `lName` varchar(30) NOT NULL,
@@ -64,5 +65,16 @@ CREATE TABLE `OrderDetail` (
   CONSTRAINT `FKtogd3d0kvb3mreeh4pn7qox19` FOREIGN KEY (`itemCode`) REFERENCES `Item` (`code`),
   CONSTRAINT `OrderDetail_ibfk_2` FOREIGN KEY (`itemCode`) REFERENCES `Item` (`code`),
   CONSTRAINT `OrderDetail_ibfk_3` FOREIGN KEY (`orderId`) REFERENCES `Order` (`id`)
+=======
+CREATE TABLE `AddStudentSubGroups`(
+                        `id` varchar(10) NOT NULL,
+                        `year` int DEFAULT NULL,
+                        `semester` int  DEFAULT 1,
+                        `programme` varchar(20) DEFAULT NULL,
+                        `groupNo` int  DEFAULT NULL,
+                        `subGroupNo` int DEFAULT NULL,
+                        `groupId` int  DEFAULT NULL,
+                        `subGroupId` int  DEFAULT NULL,
+                        PRIMARY KEY (`id`)
+>>>>>>> 7066ae310f3d91b616a6e1737cfad12965ab97fa
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-*/
