@@ -17,7 +17,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.input.MouseEvent;
+import lk.sliit.itpmProject.dto.AddStudentDTO;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.awt.*;
 
 import java.io.IOException;
@@ -26,9 +28,9 @@ import java.util.ResourceBundle;
 
 public class AddStudentController implements Initializable {
 
+    @FXML
+    public javafx.scene.control.Button btnAddSave;
 
-
-    public javafx.scene.control.Button btnSave1;
     @FXML
     private AnchorPane root;
 
@@ -40,7 +42,6 @@ public class AddStudentController implements Initializable {
 
     @FXML
     private Spinner<Integer> groupNumberSpinner;
-
 
     @FXML
     private ImageView iconHome;
@@ -66,15 +67,20 @@ public class AddStudentController implements Initializable {
     @FXML
     private JFXTextField groupIdTxt;
 
+    @FXML
+    private Spinner<Integer> semesterSpinner;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         SpinnerValueFactory<Integer> spinnerValueFactory1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 30, 0);
         SpinnerValueFactory<Integer> spinnerValueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 2, 0);
+        SpinnerValueFactory<Integer> spinnerValueFactory3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1,1,1);
         this.subGroupNumberSpinner.setValueFactory(spinnerValueFactory2);
         this.groupNumberSpinner.setValueFactory(spinnerValueFactory1);
+        this.semesterSpinner.setValueFactory(spinnerValueFactory3);
         subGroupNumberSpinner.setEditable(false);
         groupNumberSpinner.setEditable(false);
+        semesterSpinner.setEditable(false);
         programmeCombo.setValue("IT");
 
         ObservableList list1 = programmeCombo.getItems();
@@ -82,7 +88,7 @@ public class AddStudentController implements Initializable {
         list1.add("CSSE");
         list1.add("CSE");
         list1.add("IM");
-        btnSave1.setDisable(true);
+        btnAddSave.setDisable(true);
 
     }
     @FXML
@@ -135,16 +141,36 @@ public class AddStudentController implements Initializable {
 
     }
 
-
     @FXML
     void btnGenerateId_OnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void btnSave_OnAction(ActionEvent event) {
+    void btnAddSave_onAction(ActionEvent event) throws Exception{
+        int year = 0;
+        int semester = 0;
+        String programme = this.programmeCombo.getValue();
+        int groupNo = 0;
+        int subGroupNo = 0;
+        int groupId = this.subGroupNumberSpinner.getValue();
+        int subGroupId = this.subGroupNumberSpinner.getValue();
 
+        AddStudentDTO addStudentDTO = new AddStudentDTO(
+                1,
+                year,
+                semester,
+                programme,
+                groupNo,
+                subGroupNo,
+                groupId,
+                subGroupId
+        );
+        try{
 
+        } catch (Exception e){
+
+        }
     }
 
     public void btnClear(ActionEvent event) {
