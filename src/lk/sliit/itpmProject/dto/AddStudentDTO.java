@@ -28,14 +28,6 @@ public class AddStudentDTO {
         return id;
     }
 
-    public String getProgramme() {
-        return programme;
-    }
-
-    public void setProgramme(String programme) {
-        this.programme = programme;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -54,6 +46,14 @@ public class AddStudentDTO {
 
     public void setSemester(int semester) {
         this.semester = semester;
+    }
+
+    public String getProgramme() {
+        return programme;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
     }
 
     public int getGroupNo() {

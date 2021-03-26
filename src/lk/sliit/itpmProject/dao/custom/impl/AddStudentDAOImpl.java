@@ -3,8 +3,6 @@ package lk.sliit.itpmProject.dao.custom.impl;
 import lk.sliit.itpmProject.dao.CrudUtil;
 import lk.sliit.itpmProject.dao.custom.AddStudentDAO;
 import lk.sliit.itpmProject.entity.AddStudent;
-import lk.sliit.itpmProject.entity.AddWorkingDaysAndHours;
-
 import java.util.List;
 
 public class AddStudentDAOImpl implements AddStudentDAO {
@@ -15,25 +13,21 @@ public class AddStudentDAOImpl implements AddStudentDAO {
 
     @Override
     public AddStudent find(String s) throws Exception {
-        return AddStudent;
+        return null;
     }
 
     @Override
     public boolean save(AddStudent entity) throws Exception {
-        return CrudUtil.execute("INSERT INTO AddStudent VALUES()",
-            entity.getId(),
-            entity.getYear()
-                );
-        /*
-
-        return CrudUtil.execute("INSERT INTO WorkingDays VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        return CrudUtil.execute("INSERT INTO AddStudentSubGroups VALUES (?,?,?,?,?,?,?,?)",
                 entity.getId(),
-                entity.getNoOfWorkingDays(), entity.isSunday(),
-                entity.isMonday(),entity.isTuesday(),entity.isWednesday(),
-                entity.isThursday(),entity.isFriday(),entity.isSaturday(),
-                entity.getHours(),entity.getMinutes()
+                entity.getYear(),
+                entity.getSemester(),
+                entity.getProgramme(),
+                entity.getGroupNo(),
+                entity.getSubGroupNo(),
+                entity.getGroupId(),
+                entity.getSubGroupId()
         );
-         */
     }
 
     @Override

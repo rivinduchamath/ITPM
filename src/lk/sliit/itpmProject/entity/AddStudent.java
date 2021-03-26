@@ -1,10 +1,10 @@
 package lk.sliit.itpmProject.entity;
 
-public class AddStudent implements SuperEntity{
+public class AddStudent implements SuperEntity {
     private int id;
     private int year;
-    private String programme;
     private int semester;
+    private String programme;
     private int groupNo;
     private int subGroupNo;
     private int groupId;
@@ -36,14 +36,6 @@ public class AddStudent implements SuperEntity{
         return year;
     }
 
-    public String getProgramme() {
-        return programme;
-    }
-
-    public void setProgramme(String programme) {
-        this.programme = programme;
-    }
-
     public void setYear(int year) {
         this.year = year;
     }
@@ -54,6 +46,14 @@ public class AddStudent implements SuperEntity{
 
     public void setSemester(int semester) {
         this.semester = semester;
+    }
+
+    public String getProgramme() {
+        return programme;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
     }
 
     public int getGroupNo() {
@@ -87,4 +87,20 @@ public class AddStudent implements SuperEntity{
     public void setSubGroupId(int subGroupId) {
         this.subGroupId = subGroupId;
     }
+
+    @Override
+    public String toString() {
+        return "AddStudent{" +
+                "id=" + id +
+                ", year=" + year +
+                ", semester=" + semester +
+                ", programme='" + programme + '\'' +
+                ", groupNo=" + groupNo +
+                ", subGroupNo=" + subGroupNo +
+                ", groupId=" + groupId +
+                ", subGroupId=" + subGroupId +
+                '}';
+    }
+
+
 }

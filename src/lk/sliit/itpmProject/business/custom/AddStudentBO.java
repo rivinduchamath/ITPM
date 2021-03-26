@@ -1,4 +1,10 @@
 package lk.sliit.itpmProject.business.custom;
 
-public interface AddStudentBO {
+
+import lk.sliit.itpmProject.business.SuperBO;
+import lk.sliit.itpmProject.dto.AddStudentDTO;
+
+public interface AddStudentBO extends SuperBO {
+    boolean saveStudent(AddStudentDTO addStudentDTO) throws Exception;
+
 }

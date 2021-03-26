@@ -1,5 +1,6 @@
 package lk.sliit.itpmProject.business;
 
+import lk.sliit.itpmProject.business.custom.impl.AddStudentBOImpl;
 import lk.sliit.itpmProject.business.custom.impl.AddWorkingDaysAndHoursBOImpl;
 
 public class BOFactory {
@@ -18,6 +19,8 @@ public class BOFactory {
         switch (boTypes){
             case AddWorkingDays:
                 return (T) new AddWorkingDaysAndHoursBOImpl();
+            case AddStudent:
+                return (T) new AddStudentBOImpl();
 
             default:
                 return null;
