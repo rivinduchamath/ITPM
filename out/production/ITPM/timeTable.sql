@@ -20,7 +20,7 @@ CREATE TABLE `AddStudentSubGroups`(
                         `programme` varchar(20) DEFAULT NULL,
                         `groupNo` int  DEFAULT NULL,
                         `subGroupNo` int DEFAULT NULL,
-                        `groupId` int  DEFAULT NULL,
-                        `subGroupId` int  DEFAULT NULL,
+                        `groupId` varchar(10)  DEFAULT NULL,
+                        `subGroupId` varchar(10)  DEFAULT NULL,
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
