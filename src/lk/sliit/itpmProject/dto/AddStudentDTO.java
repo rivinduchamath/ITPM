@@ -7,10 +7,10 @@ public class AddStudentDTO {
     private String programme;
     private int groupNo;
     private int subGroupNo;
-    private int groupId;
-    private int subGroupId;
+    private String groupId;
+    private String subGroupId;
 
-    public AddStudentDTO(int id, int year, int semester, String programme, int groupNo, int subGroupNo, int groupId, int subGroupId) {
+    public AddStudentDTO(int id, int year, int semester, String programme, int groupNo, int subGroupNo, String groupId, String subGroupId) {
         this.id = id;
         this.year = year;
         this.semester = semester;
@@ -72,19 +72,19 @@ public class AddStudentDTO {
         this.subGroupNo = subGroupNo;
     }
 
-    public int getGroupId() {
+    public String getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(int groupId) {
+    public void setGroupId(String groupId) {
         this.groupId = groupId;
     }
 
-    public int getSubGroupId() {
+    public String getSubGroupId() {
         return subGroupId;
     }
 
-    public void setSubGroupId(int subGroupId) {
+    public void setSubGroupId(String subGroupId) {
         this.subGroupId = subGroupId;
     }
 
@@ -97,8 +97,8 @@ public class AddStudentDTO {
                 ", programme='" + programme + '\'' +
                 ", groupNo=" + groupNo +
                 ", subGroupNo=" + subGroupNo +
-                ", groupId=" + groupId +
-                ", subGroupId=" + subGroupId +
+                ", groupId='" + groupId + '\'' +
+                ", subGroupId='" + subGroupId + '\'' +
                 '}';
     }
 }

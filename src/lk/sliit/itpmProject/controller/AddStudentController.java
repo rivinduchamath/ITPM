@@ -22,13 +22,14 @@ import javafx.scene.input.MouseEvent;
 import lk.sliit.itpmProject.business.BOFactory;
 import lk.sliit.itpmProject.business.BOTypes;
 import lk.sliit.itpmProject.business.custom.AddStudentBO;
-import lk.sliit.itpmProject.business.custom.AddWorkingDaysAndHoursBO;
 import lk.sliit.itpmProject.dto.AddStudentDTO;
-import lk.sliit.itpmProject.dto.AddWorkingDaysAndHoursDTO;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class AddStudentController implements Initializable {
 
@@ -94,7 +95,7 @@ public class AddStudentController implements Initializable {
         programmeCombo.setValue("IT");
         ObservableList list1 = programmeCombo.getItems();
         list1.add("IT");
-        list1.add("CSSE");
+        list1.add("CSNE");
         list1.add("CSE");
         list1.add("IM");
         btnAddSave.setDisable(true);
@@ -152,24 +153,50 @@ public class AddStudentController implements Initializable {
 
     @FXML
     void btnGenerateId_OnAction(ActionEvent event) {
+        int year = Integer.parseInt(academicYearTxt.getText());
+        int semester = semesterSpinner.getValue();
+        String programme = programmeCombo.getValue();
+        int groupNo = groupNumberSpinner.getValue();
+        int subGroupNo = subGroupNumberSpinner.getValue();
 
-        String groupId = groupIdTxt.getText();
-        String subGroup = subGroupIdTxt.getText();
+        groupIdTxt.setText("Y" + year + "S" + semester + "." + groupNo + "(" + programme + ")");
+        subGroupIdTxt.setText("Y" + year + "S" + semester + "." + groupNo + "." + subGroupNo + " (" + programme + ")");
         btnAddSave.setDisable(false);
-
     }
 
     @FXML
     void btnSave_onAction(ActionEvent event) {
+     /*   int maxCode = 0;
+        try {
+            String lastItemCode = addStudentBO.getLastItemCode();
+            if (lastItemCode == null) {
+                maxCode = 0;
+            } else {
+                maxCode = Integer.parseInt(lastItemCode.replace("I", ""));
+            }
+            maxCode = maxCode + 1;
+            String code = "";
+            if (maxCode < 10) {
+                code = "I00" + maxCode;
+            } else if (maxCode < 100) {
+                code = "I0" + maxCode;
+            } else {
+                code = "I" + maxCode;
+            }
+        } catch (Exception e) {
+            new Alert(Alert.AlertType.INFORMATION,"Something went wrong").show();
+        }
+       */
+
         int year = Integer.parseInt(academicYearTxt.getText());
         int semester = semesterSpinner.getValue();
         String programme = programmeCombo.getValue();
-        int groupNo = Integer.parseInt(groupIdTxt.getText());
-        int subGroupNo = Integer.parseInt(subGroupIdTxt.getText());
-        int groupId = groupNumberSpinner.getValue();
-        int subGroupId = subGroupNumberSpinner.getValue();
+        int groupNo = groupNumberSpinner.getValue();
+        int subGroupNo = subGroupNumberSpinner.getValue();
+        String groupId = groupIdTxt.getText();
+        String subGroupId = subGroupIdTxt.getText();
 
-        AddStudentDTO andHoursDTO = new AddStudentDTO(
+        AddStudentDTO addStudentDTO = new AddStudentDTO(
                 1,
                 year,
                 semester,
@@ -180,11 +207,13 @@ public class AddStudentController implements Initializable {
                 subGroupId
         );
         try {
-            addStudentBO.saveStudent(andHoursDTO);
-            new Alert(Alert.AlertType.NONE, "User Added Successfully").show();
+
+            addStudentBO.saveStudent(addStudentDTO);
+            new Alert(Alert.AlertType.INFORMATION, "User Added Successfully").show();
+
         } catch (Exception e) {
             System.out.println(e);
-            System.out.println("222222222222222222222222222222222222222");
+            System.out.println("2222222222222222222222222");
         }
     }
 
@@ -192,6 +221,4 @@ public class AddStudentController implements Initializable {
     public void btnClear(ActionEvent event) {
 
     }
-
-
 }
