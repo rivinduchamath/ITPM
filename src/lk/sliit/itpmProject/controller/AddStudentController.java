@@ -160,7 +160,7 @@ public class AddStudentController implements Initializable {
     }
 
     @FXML
-    void btnSave_OnAction(ActionEvent event) {
+    void btnSave_onAction(ActionEvent event) {
         int year = Integer.parseInt(academicYearTxt.getText());
         int semester = semesterSpinner.getValue();
         String programme = programmeCombo.getValue();
@@ -183,7 +183,8 @@ public class AddStudentController implements Initializable {
             addStudentBO.saveStudent(andHoursDTO);
             new Alert(Alert.AlertType.ERROR, "User Added Successfully").show();
         } catch (Exception e) {
-
+            System.out.println(e);
+            System.out.println("222222222222222222222222222222222222222");
         }
     }
 
