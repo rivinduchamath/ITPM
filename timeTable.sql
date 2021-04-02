@@ -67,14 +67,14 @@ CREATE TABLE `OrderDetail` (
   CONSTRAINT `OrderDetail_ibfk_3` FOREIGN KEY (`orderId`) REFERENCES `Order` (`id`)
 =======
 CREATE TABLE `AddStudentSubGroups`(
-                        `id` varchar(10) NOT NULL,
+                        `id` int NOT NULL,
                         `year` int DEFAULT NULL,
                         `semester` int  DEFAULT 1,
                         `programme` varchar(20) DEFAULT NULL,
                         `groupNo` int  DEFAULT NULL,
                         `subGroupNo` int DEFAULT NULL,
-                        `groupId` int  DEFAULT NULL,
-                        `subGroupId` int  DEFAULT NULL,
+                        `groupId` varchar(100)  DEFAULT NULL,
+                        `subGroupId` varchar(100)  DEFAULT NULL,
                         PRIMARY KEY (`id`)
 >>>>>>> 7066ae310f3d91b616a6e1737cfad12965ab97fa
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

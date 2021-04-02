@@ -24,4 +24,10 @@ public class AddStudentBOImpl implements AddStudentBO {
                 addStudentDTO.getSubGroupId()
         ));
     }
+
+    @Override
+    public int getLastItemCode() throws Exception {
+
+        return addStudentDAO.getLastStudentID();
+    }
 }
