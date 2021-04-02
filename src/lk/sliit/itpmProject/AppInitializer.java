@@ -27,11 +27,7 @@ public class AppInitializer extends Application {
             fileHandler.setFormatter(new SimpleFormatter());
             rootLogger.addHandler(fileHandler);
 
-
-
             DBConnection.getInstance().getConnection();
-
-
 
             URL resource = this.getClass().getResource("/lk/sliit/itpmProject/view/MainForm.fxml");
             Parent root = FXMLLoader.load(resource);
