@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -35,6 +32,9 @@ public class AddStudentController implements Initializable {
 
     @FXML
     public Button btnAddSave;
+
+    @FXML
+    public Button btnAddClear;
 
     @FXML
     private AnchorPane root;
@@ -207,7 +207,12 @@ public class AddStudentController implements Initializable {
     }
 
     @FXML
-    public void btnClear(ActionEvent event) {
-
+    public void btnClear_onAction(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                "Are you sure whether you want to clear?",
+                ButtonType.YES, ButtonType.NO);
+        alert.showAndWait();
+        academicYearTxt.clear();
+        programmeCombo.setValue("IT");
     }
 }

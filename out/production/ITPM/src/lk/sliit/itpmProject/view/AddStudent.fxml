@@ -54,12 +54,12 @@
         </Text>
         <Spinner id="spAddGroupNo" fx:id="subGroupNumberSpinner" layoutX="971.0" layoutY="374.0" prefHeight="31.0" prefWidth="209.0" />
         <Spinner id="spAddSubGroupNo" fx:id="groupNumberSpinner" layoutX="473.0" layoutY="373.0" prefHeight="31.0" prefWidth="209.0" />
-        <Button id="btnAddSave" fx:id="btnAddSave" graphicTextGap="6.0" layoutX="465.0" layoutY="601.0" mnemonicParsing="false"  onAction="#btnSave_onAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+        <Button id="btnAddSave" fx:id="btnAddSave" graphicTextGap="6.0" layoutX="465.0" layoutY="601.0" mnemonicParsing="false" onAction="#btnSave_onAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #064E98;" text="Save" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font></Button>
 
-        <Button id="btnClear" graphicTextGap="6.0" layoutX="774.0" layoutY="601.0" mnemonicParsing="false" mouseTransparent="true" onAction="#btnClear" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+        <Button id="btnClear" fx:id="btnAddClear" graphicTextGap="6.0" layoutX="774.0" layoutY="601.0" mnemonicParsing="false" onAction="#btnClear_onAction" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #980606;" text="Clear" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
 
             <font>
                 <Font name="System Bold" size="16.0" />
