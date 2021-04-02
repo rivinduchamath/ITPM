@@ -1,7 +1,8 @@
 package lk.sliit.itpmProject.dto;
 
 public class AddLecturerDTO {
-    private String id;
+    private int id;
+    private String empId;
     private String lName;
     private String department;
     private String faculty;
@@ -10,8 +11,12 @@ public class AddLecturerDTO {
     private String level;
     private String rank;
 
-    public AddLecturerDTO(String id, String lName, String department, String faculty, String center, String buildingNo, String level, String rank) {
+    public AddLecturerDTO() {
+    }
+
+    public AddLecturerDTO(int id, String empId, String lName, String department, String faculty, String center, String buildingNo, String level, String rank) {
         this.id = id;
+        this.empId = empId;
         this.lName = lName;
         this.department = department;
         this.faculty = faculty;
@@ -21,15 +26,20 @@ public class AddLecturerDTO {
         this.rank = rank;
     }
 
-    public AddLecturerDTO() {
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
     }
 
     public String getlName() {
@@ -91,7 +101,8 @@ public class AddLecturerDTO {
     @Override
     public String toString() {
         return "AddLecturerDTO{" +
-                "id='" + id + '\'' +
+                "id=" + id +
+                ", empId='" + empId + '\'' +
                 ", lName='" + lName + '\'' +
                 ", department='" + department + '\'' +
                 ", faculty='" + faculty + '\'' +

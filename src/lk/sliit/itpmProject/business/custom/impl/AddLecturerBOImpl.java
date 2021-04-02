@@ -13,6 +13,7 @@ public class AddLecturerBOImpl implements AddLecturerBO {
     public Boolean saveLecturer(AddLecturerDTO addLecturerDTO) throws Exception {
         return addLecturerDAO.save(new AddLecturer(
                 addLecturerDTO.getId(),
+                addLecturerDTO.getEmpId(),
                 addLecturerDTO.getlName(),
                 addLecturerDTO.getDepartment(),
                 addLecturerDTO.getFaculty(),
@@ -22,4 +23,10 @@ public class AddLecturerBOImpl implements AddLecturerBO {
                 addLecturerDTO.getRank()
         ));
     }
+
+    @Override
+    public int getLastItemCode() throws Exception {
+        return addLecturerDAO.getLastLecturerID();
+    }
+
 }
