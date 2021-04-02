@@ -166,27 +166,17 @@ public class AddStudentController implements Initializable {
 
     @FXML
     void btnSave_onAction(ActionEvent event) {
-     /*   int maxCode = 0;
+        int maxCode = 0;
         try {
-            String lastItemCode = addStudentBO.getLastItemCode();
-            if (lastItemCode == null) {
-                maxCode = 0;
+            int lastItemCode = addStudentBO.getLastItemCode();
+            if (lastItemCode == 0) {
+                maxCode = 1;
             } else {
-                maxCode = Integer.parseInt(lastItemCode.replace("I", ""));
-            }
-            maxCode = maxCode + 1;
-            String code = "";
-            if (maxCode < 10) {
-                code = "I00" + maxCode;
-            } else if (maxCode < 100) {
-                code = "I0" + maxCode;
-            } else {
-                code = "I" + maxCode;
+                maxCode = lastItemCode + 1;
             }
         } catch (Exception e) {
             new Alert(Alert.AlertType.INFORMATION,"Something went wrong").show();
         }
-       */
 
         int year = Integer.parseInt(academicYearTxt.getText());
         int semester = semesterSpinner.getValue();
@@ -197,7 +187,7 @@ public class AddStudentController implements Initializable {
         String subGroupId = subGroupIdTxt.getText();
 
         AddStudentDTO addStudentDTO = new AddStudentDTO(
-                1,
+                maxCode,
                 year,
                 semester,
                 programme,
@@ -213,7 +203,6 @@ public class AddStudentController implements Initializable {
 
         } catch (Exception e) {
             System.out.println(e);
-            System.out.println("2222222222222222222222222");
         }
     }
 
