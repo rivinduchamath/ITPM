@@ -20,7 +20,17 @@ public class AddLecturerDAOImpl implements AddLecturerDAO {
 
     @Override
     public boolean save(AddLecturer entity) throws Exception {
-        return false;
+        return CrudUtil.execute("INSERT INTO AddLecturer VALUES (?,?,?,?,?,?,?,?,?)",
+                entity.getId(),
+                entity.getEmpId(),
+                entity.getlName(),
+                entity.getDepartment(),
+                entity.getFaculty(),
+                entity.getCenter(),
+                entity.getBuildingNo(),
+                entity.getLevel(),
+                entity.getRank()
+        );
     }
 
     @Override
