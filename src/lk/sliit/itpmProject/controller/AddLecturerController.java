@@ -201,7 +201,7 @@ public class AddLecturerController implements Initializable {
     }
 
     @FXML
-    public void btnSave_OnAction(ActionEvent event) {
+    public void btnSave_OnAction(ActionEvent event) throws Exception {
         int maxCode = 0;
         try{
             int lastItemCode = addLecturerBO.getLastItemCode();
@@ -235,7 +235,7 @@ public class AddLecturerController implements Initializable {
                 level,
                 rank
         );
-
+addLecturerBO.saveLecturer(addLecturerDTO);
         System.out.println("fffffffffffffffffffffffffffffffffffff");
     //    String d = String.valueOf(lectureNameTxt.getText());
 
