@@ -6,4 +6,5 @@ import lk.sliit.itpmProject.entity.AddStudent;
 
 public interface AddStudentDAO extends CrudDAO<AddStudent, String> {
 
+    int getLastStudentID() throws Exception;
 }
