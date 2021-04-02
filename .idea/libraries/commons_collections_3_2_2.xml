@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="commons-collections-3.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jap/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/commons-digester-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/mysql-connector-java-5.1.23-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/jasperreports-6.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jap/commons-javaflow-1590792.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cripto/mysql-connector-java-8.0.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cripto/mysql-connector-java-5.1.23-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cripto/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cripto/Cryptography.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
