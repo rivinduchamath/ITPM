@@ -1,16 +1,16 @@
 package lk.sliit.itpmProject.entity;
 
 public class AddLecturer implements SuperEntity {
-    private int id;
-    private int  lName;
-    private int department;
-    private int faculty;
-    private int center;
-    private int buildingNo;
-    private int level;
-    private int rank;
+    private String id;
+    private String lName;
+    private String department;
+    private String faculty;
+    private String center;
+    private String buildingNo;
+    private String level;
+    private String rank;
 
-    public AddLecturer(int id, int lName, int department, int faculty, int center, int buildingNo, int level, int rank) {
+    public AddLecturer(String id, String lName, String department, String faculty, String center, String buildingNo, String level, String rank) {
         this.id = id;
         this.lName = lName;
         this.department = department;
@@ -19,72 +19,75 @@ public class AddLecturer implements SuperEntity {
         this.buildingNo = buildingNo;
         this.level = level;
         this.rank = rank;
+
+
     }
 
     public AddLecturer() {
+
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getlName() {
+    public String getlName() {
         return lName;
     }
 
-    public void setlName(int lName) {
+    public void setlName(String lName) {
         this.lName = lName;
     }
 
-    public int getDepartment() {
+    public String getDepartment() {
         return department;
     }
 
-    public void setDepartment(int department) {
+    public void setDepartment(String department) {
         this.department = department;
     }
 
-    public int getFaculty() {
+    public String getFaculty() {
         return faculty;
     }
 
-    public void setFaculty(int faculty) {
+    public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
 
-    public int getCenter() {
+    public String getCenter() {
         return center;
     }
 
-    public void setCenter(int center) {
+    public void setCenter(String center) {
         this.center = center;
     }
 
-    public int getBuildingNo() {
+    public String getBuildingNo() {
         return buildingNo;
     }
 
-    public void setBuildingNo(int buildingNo) {
+    public void setBuildingNo(String buildingNo) {
         this.buildingNo = buildingNo;
     }
 
-    public int getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 
-    public int getRank() {
+    public String getRank() {
         return rank;
     }
 
-    public void setRank(int rank) {
+    public void setRank(String rank) {
         this.rank = rank;
     }
 }

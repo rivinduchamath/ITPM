@@ -19,6 +19,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import lk.sliit.itpmProject.dto.AddLecturerDTO;
 
 import java.io.IOException;
 import java.net.URL;
@@ -71,6 +72,7 @@ public class AddLecturerController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        centerCombo.setValue("Malabe");
         ObservableList list1 = centerCombo.getItems();
         list1.add("Malabe");
         list1.add("Metro");
@@ -79,6 +81,7 @@ public class AddLecturerController implements Initializable {
         list1.add("Kurunagala");
         list1.add("Jaffna");
 
+        levelCombo.setValue("Professor");
         ObservableList list2 = levelCombo.getItems();
         list2.add("1 Professor");
         list2.add("2 Assistant Professor");
@@ -86,6 +89,32 @@ public class AddLecturerController implements Initializable {
         list2.add("4 Senior Lecturer");
         list2.add("5 Lecturer");
         list2.add("6 Assistant Lecturer");
+
+        ObservableList List3 = facultyCombo.getItems();
+        List3.add("Computing Faculty");
+        List3.add("Bussiness Faculty");
+        List3.add("Engineering Faculty");
+        List3.add("Architecture Faculty");
+        List3.add("Faculty of Humanities and Science");
+
+        ObservableList List4 = departmentCombo.getItems();
+        List4.add("IT");
+        List4.add("SE");
+        List4.add("ISE");
+        List4.add("DS");
+        List4.add("CS");
+        List4.add("IM");
+        List4.add("CSNE");
+        List4.add("Civil");
+        List4.add("Electronic Engineering");
+        List4.add("Mechanical Engineering");
+        List4.add("QS");
+
+        ObservableList List5 = buildingCombo.getItems();
+        List5.add("Block A");
+        List5.add("Block B");
+        List5.add("Block E");
+        List5.add("Block F");
     }
 
     @FXML
@@ -139,6 +168,26 @@ public class AddLecturerController implements Initializable {
     }
 
     public void btnSave_OnAction(ActionEvent event) {
+        String id = empIdTxt.getText();
+        String lName = nameTxt.getText();
+        String department = (String) departmentCombo.getValue();
+        String faculty = (String) facultyCombo.getValue();
+        String center = centerCombo.getValue();
+        String buildingNo = (String) buildingCombo.getValue();
+        String level = levelCombo.getValue();
+        String rank = rankTxt.getText();
+
+        AddLecturerDTO addLecturerDTO = new AddLecturerDTO(
+                "1",
+                lName,
+                department,
+                faculty,
+                center,
+                buildingNo,
+                level,
+                rank
+        );
+
         System.out.println("fffffffffffffffffffffffffffffffffffff");
     //    String d = String.valueOf(lectureNameTxt.getText());
 

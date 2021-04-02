@@ -57,11 +57,9 @@
             <Font size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
-      <Button id="ADLGenaralRank" layoutX="519.0" layoutY="721.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #268104;" text="Genarate Rank" textFill="#e8e8e8">
-=======
+
       <Button id="ADLGenaralRank" layoutX="775.0" layoutY="599.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #268104;" text="Genarate Rank" textFill="#e8e8e8">
->>>>>>> 7066ae310f3d91b616a6e1737cfad12965ab97fa
+
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
