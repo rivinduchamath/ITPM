@@ -13,8 +13,22 @@ CREATE TABLE `WorkingDays` (
                         PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `AddLecturer` (
+                               `id` int NOT NULL,
+                               `empId` varchar(50) NOT NULL,
+                               `lName` varchar(50) NOT NULL,
+                               `department` varchar(60)  NOT NULL ,
+                               `faculty` varchar(40) NOT NULL ,
+                               `center` varchar(40) NOT NULL ,
+                               `buildingNO` varchar(20) NOT NULL ,
+                               `level` varchar(70) NOT NULL ,
+                               `rank` varchar(100) NOT NULL ,
+                               PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 CREATE TABLE `AddStudentSubGroups`(
-                        `id` varchar(10) NOT NULL,
+                        `id` int NOT NULL,
                         `year` int DEFAULT NULL,
                         `semester` int  DEFAULT 1,
                         `programme` varchar(20) DEFAULT NULL,
