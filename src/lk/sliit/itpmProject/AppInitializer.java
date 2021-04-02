@@ -28,8 +28,6 @@ public class AppInitializer extends Application {
             fileHandler.setFormatter(new SimpleFormatter());
             rootLogger.addHandler(fileHandler);
 
-
-
             DBConnection.getInstance().getConnection();
 
 

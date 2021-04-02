@@ -1,7 +1,9 @@
 package lk.sliit.itpmProject.entity;
 
+
 public class AddLecturer implements SuperEntity {
-    private String id;
+    private int id;
+    private String empId;
     private String lName;
     private String department;
     private String faculty;
@@ -10,8 +12,9 @@ public class AddLecturer implements SuperEntity {
     private String level;
     private String rank;
 
-    public AddLecturer(String id, String lName, String department, String faculty, String center, String buildingNo, String level, String rank) {
+    public AddLecturer(int id, String empId, String lName, String department, String faculty, String center, String buildingNo, String level, String rank) {
         this.id = id;
+        this.empId = empId;
         this.lName = lName;
         this.department = department;
         this.faculty = faculty;
@@ -19,20 +22,25 @@ public class AddLecturer implements SuperEntity {
         this.buildingNo = buildingNo;
         this.level = level;
         this.rank = rank;
-
-
     }
 
     public AddLecturer() {
-
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
     }
 
     public String getlName() {
@@ -89,5 +97,20 @@ public class AddLecturer implements SuperEntity {
 
     public void setRank(String rank) {
         this.rank = rank;
+    }
+
+    @Override
+    public String toString() {
+        return "AddLecturer{" +
+                "id=" + id +
+                ", empId='" + empId + '\'' +
+                ", lName='" + lName + '\'' +
+                ", department='" + department + '\'' +
+                ", faculty='" + faculty + '\'' +
+                ", center='" + center + '\'' +
+                ", buildingNo='" + buildingNo + '\'' +
+                ", level='" + level + '\'' +
+                ", rank='" + rank + '\'' +
+                '}';
     }
 }

@@ -12,13 +12,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import lk.sliit.itpmProject.business.BOFactory;
+import lk.sliit.itpmProject.business.BOTypes;
+import lk.sliit.itpmProject.business.custom.AddLecturerBO;
 import lk.sliit.itpmProject.dto.AddLecturerDTO;
 
 import java.io.IOException;
@@ -29,6 +30,9 @@ public class AddLecturerController implements Initializable {
 
     @FXML
     private AnchorPane root1;
+
+    @FXML
+    private Button btnLecSave;
 
     @FXML
     private Button btnClear;
@@ -69,6 +73,7 @@ public class AddLecturerController implements Initializable {
     @FXML
     private JFXTextField nameTxt;
 
+    private final AddLecturerBO addLecturerBO = BOFactory.getInstance().getBO(BOTypes.AddLecturer);
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -83,12 +88,12 @@ public class AddLecturerController implements Initializable {
 
         levelCombo.setValue("Professor");
         ObservableList list2 = levelCombo.getItems();
-        list2.add("1 Professor");
-        list2.add("2 Assistant Professor");
-        list2.add("3 Senior Lecturer(HG)");
-        list2.add("4 Senior Lecturer");
-        list2.add("5 Lecturer");
-        list2.add("6 Assistant Lecturer");
+        list2.add("Professor");
+        list2.add("Assistant Professor");
+        list2.add("Senior Lecturer(HG)");
+        list2.add("Senior Lecturer");
+        list2.add("Lecturer");
+        list2.add("Assistant Lecturer");
 
         ObservableList List3 = facultyCombo.getItems();
         List3.add("Computing Faculty");
@@ -167,8 +172,50 @@ public class AddLecturerController implements Initializable {
 
     }
 
-    public void btnSave_OnAction(ActionEvent event) {
-        String id = empIdTxt.getText();
+    @FXML
+    void ADLGenrateRank_OnAction(ActionEvent event){
+        String tempLevel = null;
+        String lecId = empIdTxt.getText();
+        String level = levelCombo.getValue();
+
+        if(level == "Professor"){
+            tempLevel = "1";
+        }
+        else if(level == "Assistant Professor"){
+            tempLevel = "2";
+        }
+        else if(level == "Senior Lecturer(HG)"){
+            tempLevel = "3";
+        }
+        else if(level == "Senior Lecturer"){
+            tempLevel = "4";
+        }
+        else if(level == "Lecturer"){
+            tempLevel = "5";
+        }
+        else if(level == "Assistant Lecturer"){
+            tempLevel = "6";
+        }
+
+        rankTxt.setText(tempLevel + "." + lecId);
+    }
+
+    @FXML
+    public void btnSave_OnAction(ActionEvent event) throws Exception {
+        int maxCode = 0;
+        try{
+            int lastItemCode = addLecturerBO.getLastItemCode();
+            if(lastItemCode == 0){
+                maxCode = 1;
+            }
+            else{
+                maxCode = lastItemCode + 1;
+            }
+        }catch(Exception e){
+            new Alert(Alert.AlertType.INFORMATION, "Something went wrong").show();
+        }
+
+        String empId = empIdTxt.getText();
         String lName = nameTxt.getText();
         String department = (String) departmentCombo.getValue();
         String faculty = (String) facultyCombo.getValue();
@@ -178,7 +225,8 @@ public class AddLecturerController implements Initializable {
         String rank = rankTxt.getText();
 
         AddLecturerDTO addLecturerDTO = new AddLecturerDTO(
-                "1",
+                maxCode,
+                empId,
                 lName,
                 department,
                 faculty,
@@ -187,12 +235,13 @@ public class AddLecturerController implements Initializable {
                 level,
                 rank
         );
-
+        addLecturerBO.saveLecturer(addLecturerDTO);
         System.out.println("fffffffffffffffffffffffffffffffffffff");
-    //    String d = String.valueOf(lectureNameTxt.getText());
+        //    String d = String.valueOf(lectureNameTxt.getText());
 
     }
 
+    @FXML
     public void btnClear_OnAction(ActionEvent event) {
     }
 

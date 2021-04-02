@@ -7,12 +7,14 @@ import lk.sliit.itpmProject.dao.custom.AddLecturerDAO;
 import lk.sliit.itpmProject.dto.AddLecturerDTO;
 import lk.sliit.itpmProject.entity.AddLecturer;
 
+
 public class AddLecturerBOImpl implements AddLecturerBO {
     private final AddLecturerDAO addLecturerDAO = DAOFactory.getInstance().getDAO(DAOTypes.AddLecturer);
     @Override
-    public Boolean saveLecturer(AddLecturerDTO addLecturerDTO) throws Exception {
-        return addLecturerDAO.save(new AddLecturer(
+    public void saveLecturer(AddLecturerDTO addLecturerDTO) throws Exception {
+        addLecturerDAO.save(new AddLecturer(
                 addLecturerDTO.getId(),
+                addLecturerDTO.getEmpId(),
                 addLecturerDTO.getlName(),
                 addLecturerDTO.getDepartment(),
                 addLecturerDTO.getFaculty(),
@@ -22,4 +24,10 @@ public class AddLecturerBOImpl implements AddLecturerBO {
                 addLecturerDTO.getRank()
         ));
     }
+
+    @Override
+    public int getLastItemCode() throws Exception {
+        return addLecturerDAO.getLastLecturerID();
+    }
+
 }
