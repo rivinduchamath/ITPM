@@ -39,7 +39,6 @@ public class AppInitializer extends Application {
             primaryStage.setScene(mainScene);
             primaryStage.setTitle("TimeTableManagement SLIIT - 2021");
             primaryStage.centerOnScreen();
-//            primaryStage.setResizable(false);
             primaryStage.centerOnScreen();
             primaryStage.show();
         }catch (IOException e){
